@@ -1,6 +1,12 @@
-def main():
-    print("Hello from dev-katke!")
+import pygame
 
+pygame.init()
+screen = pygame.display.set_mode((500, 300))
+clock = pygame.time.Clock()
+running = True
 
-if __name__ == "__main__":
-    main()
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+pygame.quit

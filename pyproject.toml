@@ -1,7 +1,9 @@
 [project]
-name = "dev-katke"
+name = "katke"
 version = "0.1.0"
-description = "Add your description here"
+description = ""
 readme = "README.md"
 requires-python = "==3.13.3"
-dependencies = []
+dependencies = [
+    "pygame-ce==2.5.3",
+]
