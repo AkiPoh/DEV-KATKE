@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "ms-python.python",
+        "charliermarsh.ruff",
+        "ms-python.vscode-pylance",
+        "ms-python.debugpy",
+        "tamasfe.even-better-toml",
+        "yzhang.markdown-all-in-one",
+        "mk12.better-git-line-blame",
+        "oderwat.indent-rainbow",
+        "PKief.material-icon-theme",
+        "Gruntfuggly.todo-tree"
+    ]
+}

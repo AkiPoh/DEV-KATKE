@@ -1,0 +1,20 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true
+    },
+    "[json, jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features",
+        "editor.formatOnSave": true
+    },
+    "editor.insertSpaces": true,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "files.eol": "\n",
+    "editor.rulers": [
+        75,
+        88
+    ],
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true
+}
