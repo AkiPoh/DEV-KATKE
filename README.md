@@ -4,29 +4,38 @@
 
 The goal of KATKE is to redefine how modern coding tools function.
 
-[What KATKE will actually be; an app-style tool, combining a code editor, compilation, intuitive UI, etc..]
+KATKE will be an app that seamlessly integrates code editing, compilation, and deployment through an intuitive interface--bringing the cohesiveness of modern creative tools to software development.
 
-We intend to wherever possible employing, enhancing and augmenting existing solutions such as Rust, Python, Git, semantically correct project file structures, etc.
+We intend to employ, enhance, and augment existing solutions wherever possible, building upon established foundations like Rust, Python, Git, and semantically correct project structures.
 
 KATKE is a permissive open-source project licensed under the Apache 2.0 license.
 
-[Explaining how we are not fearful of innovation; we intend to break backwards compatability continually thoughout the development process, we believe the best way to ensure project and tool compatability is to use the original version of the tool, for reproducable workflows; we intend in the future to approximately bi-annually release LTS editions, which will receive support indefinetely, though no cross compatability between LTS versions should be expected... the reason for this that in combination of using pre-existing solutions, we will also integrate a lot of our own workflow configurations, project workspace configuration, etc into a project. Due to our philosophy of ensuring reproductability and relatively concistent development enviroments]
+## Our Current Development Philosophy for KATKE
+
+We believe in continuous innovation.  By extension, we believe that backwards compatability on the "main" branch version is not a major priority--due to the need to have the flexibility required to innovate with low-friction, and not be limited by past decisions, that might not fit our and our users modern needs the best.
+
+We believe true and transparent reproducibility comes from using the same tool version, the same way, to achieve the same outcome. We intend to with native solutions to enable such rapid version hopping between tool versions, to ensure smooth usage experience for project developers, across multiple projects.
+
+Looking ahead, we current to in the future to employ bi-annual LTS "branch" edition "fork" releases that will receive indefinite support. This approach allows us to maintain momentup and agility on the "main" branch. While ensuring we can offer tooling that that serves the need for longer (especially security update) supported versions for longer projects.
+
+Cross compatability between LTS editions will not be a priority. But for *updates* on specific LTS editions backwards and forwards compatability is an absolute priority.
 
 ## REFERENCE-TABLE: Table of Contents
 
 - [KATKE](#katke)
+  - [Our Current Development Philosophy for KATKE](#our-current-development-philosophy-for-katke)
   - [REFERENCE-TABLE: Table of Contents](#reference-table-table-of-contents)
-  - [REFERENCE: Project Status](#reference-project-status)
+  - [REFERENCE: The Current Project Status for KATKE](#reference-the-current-project-status-for-katke)
   - [REFERENCE: Our Current Roadmap for KATKE](#reference-our-current-roadmap-for-katke)
   - [REFERENCE: Our Current Vision for KATKE](#reference-our-current-vision-for-katke)
   - [REFERENCE: Tech Architecture](#reference-tech-architecture)
-  - [REFENCE: Contributing to KATKE](#refence-contributing-to-katke)
+  - [REFERENCE: Contributing to KATKE](#reference-contributing-to-katke)
   - [REFERENCE: License](#reference-license)
   - [REFERENCE: TODO for this `README.md`](#reference-todo-for-this-readmemd)
 
-## REFERENCE: Project Status
+## REFERENCE: The Current Project Status for KATKE
 
-**Current status**: Project is in its very initial development and planning phase.
+**Current status**: Project is in its very initial development and planning phase. We currently have really nothing concrete to show you guys--but we hope for that to change in the near-future.
 
 ## REFERENCE: Our Current Roadmap for KATKE
 
@@ -34,24 +43,26 @@ KATKE is a permissive open-source project licensed under the Apache 2.0 license.
 
 ## REFERENCE: Our Current Vision for KATKE
 
-A code editor not too different from a newspaper in looks and feel. Designed to be intuitive, while not being restrictive. Designed to be an integrated solution from code writing, to project compilation and deployment--while not restricting developers' capability to use other external tools for maximum flexbility. Being initially focused on supporting Rust based programming and Markdown based documentation--while ensuring intuitiveness that begins to rival visual programming languages like Scratch.
+A code editor not too different from a newspaper in looks and feel. Designed to be intuitive, while not being restrictive. Designed to be an integrated solution from code writing, to project compilation and deployment--while not restricting developers' capability to use other external tools for maximum flexibility. Being initially focused on supporting Rust based programming and Markdown based documentation--while ensuring intuitiveness that rivals beginner visual programming languages like Scratch, while producing production-grade solutions.
 
 ## REFERENCE: Tech Architecture
 
 - `python` (version: 3.13.3)
-  - Serves as the "core"
-  - [Chosen as the internal programming language for building at least the initial versions of KATKE. Due to Python's proven flexibility and rapid development capabilities for complex "middleware" tools. While we believe that in the future it will probably make sense to transition completely to a programming language like Rust for building KATKE; currently Python and its modern complimentary tooling best serve our needs for these initial stages]
-  - Docs: https://docs.python.org/3.13/
+  - **Purpose:** Serves as the "core"
+  - **Rationale**: Python offers unmatched flexibility and velocity for building complex middleware tools and apps. Though future versions of KATKE may transition to Rust for performance and consistency with our priorities. Currently Python's mature ecosystem and rapid prototyping capabilities make it the pragmatic choice for these crucial early stages.
+  - **Docs:** https://docs.python.org/3.13/
 - `pygame-ce` (version: 2.5.3)
-  - Serves as the "frontend-framework"
-  - [Chosen due to our need for pixel-perfect precision, and our need to have the ability to define custom UI behaviour to optimise our UI, make the workflw efficient, and ensure we can make a "fun" tool--we previosly considered frameworks like Electron, Flet, etc and found them not to fit our needs, due to us circling around to our believe in the need to have flexibility and deterministic behaviour in how we do things.]
-  - Docs: https://pyga.me/docs/
+  - **Purpose:** Serves as the "frontend-framework"
+  - **Rationale**: After evaluating frameworks like Electron and Flet, we found them too constraining for our vision. We need pixel-perfect control and the freedom to craft custom UI behaviors that make development not just efficient, but enjoyable. Pygame-ce provides the low-level control and deterministic behavior essential for building the innovative interface we envision.
+  - **Docs:** https://pyga.me/docs/
 
-## REFENCE: Contributing to KATKE
+## REFERENCE: Contributing to KATKE
 
-We welcome contributions. If you wish to contribute to KATKE please consider opening a GitHub Issue first to discuss your contribution ideas and how they fit into the wider project and its priorities before contributing--we intend to swiftly respond to any Issues and Pull Requests opened in our GitHub repository (https://github.com/KATKE-GROUP/KATKE).
+We welcome contributions. If you wish to contribute to KATKE please consider opening a GitHub Issue first to discuss your contribution ideas and how they fit into the wider project and its priorities before contributing.
 
-Especially as this project (KATKE) matures we will focus on making this an amazing project contribute to for all kinds of contributors.
+We intend to swiftly respond to any Issues and Pull Requests opened in our GitHub repository (https://github.com/KATKE-GROUP/KATKE).
+
+As this project (KATKE) matures we will especially focus on making this an amazing project to contribute to for all kinds of contributors.
 
 ## REFERENCE: License
 
@@ -60,4 +71,4 @@ KATKE is a permissive open-source project licensed under the Apache 2.0 license.
 ## REFERENCE: TODO for this `README.md`
 
 - [ ] Add "practical" section on installing KATKE
-- [ ] Add "practical" section on setting up a dev enviroment for working on developing KATKE
+- [ ] Add "practical" section on setting up a dev environment for working on developing KATKE
