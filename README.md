@@ -118,5 +118,4 @@ KATKE is a permissive open-source project licensed under the Apache 2.0 license.
 
 - [ ] Add "practical" section on installing KATKE
 - [ ] Add "practical" section on setting up a dev environment for working on developing KATKE
-- [ ] Add "reference" section on minimum viable functionality for Alpha release
 - [ ] Add "reference" section "Why KATKE?"
