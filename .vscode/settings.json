@@ -12,7 +12,6 @@
     "files.trimTrailingWhitespace": true,
     "files.eol": "\n",
     "editor.rulers": [
-        75,
         88
     ],
     "editor.bracketPairColorization.enabled": true,
