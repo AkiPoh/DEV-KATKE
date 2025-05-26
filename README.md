@@ -26,7 +26,7 @@ KATKE is a permissive open-source project licensed under the Apache 2.0 license.
     - [REFERENCE: Target Audience for KATKE](#reference-target-audience-for-katke)
     - [REFERENCE: Tech Architecture for KATKE](#reference-tech-architecture-for-katke)
     - [REFERENCE: Our Current Development Practices for KATKE](#reference-our-current-development-practices-for-katke)
-      - [REFERENCE: Philosphy Behind Our Current Development Practices for KATKE](#reference-philosphy-behind-our-current-development-practices-for-katke)
+      - [REFERENCE: Philosophy Behind Our Current Development Practices for KATKE](#reference-philosophy-behind-our-current-development-practices-for-katke)
       - [REFERENCE: "Main" Branch Development Practices for KATKE](#reference-main-branch-development-practices-for-katke)
   - [REFERENCE: Communication Channels for KATKE and Contributing to KATKE](#reference-communication-channels-for-katke-and-contributing-to-katke)
     - [REFERENCE: Official Communication Channels for KATKE](#reference-official-communication-channels-for-katke)
@@ -80,7 +80,7 @@ KATKE is being built for:
 
 ### REFERENCE: Our Current Development Practices for KATKE
 
-#### REFERENCE: Philosphy Behind Our Current Development Practices for KATKE
+#### REFERENCE: Philosophy Behind Our Current Development Practices for KATKE
 
 We believe in continuous innovation. This means we prioritize breakthrough features over maintaining legacy code. By extension, we believe that backwards compatibility on the "main" branch version is not a major priority--due to the need to have the flexibility required to innovate with low-friction, and not be limited by past decisions, that might not fit our and our users modern needs the best.
 
