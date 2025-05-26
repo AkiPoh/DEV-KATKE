@@ -17,16 +17,20 @@ KATKE is a permissive open-source project licensed under the Apache 2.0 license.
 - [KATKE](#katke)
   - [REFERENCE-TABLE: Table of Contents](#reference-table-table-of-contents)
   - [REFERENCE: Project Status](#reference-project-status)
+  - [REFERENCE: Our Current Roadmap for KATKE](#reference-our-current-roadmap-for-katke)
   - [REFERENCE: Our Current Vision for KATKE](#reference-our-current-vision-for-katke)
   - [REFERENCE: Tech Architecture](#reference-tech-architecture)
-  - [REFERENCE: TODO for this `README.md`](#reference-todo-for-this-readmemd)
-  - [REFERENCE: Our Current Roadmap for KATKE](#reference-our-current-roadmap-for-katke)
   - [REFENCE: Contributing to KATKE](#refence-contributing-to-katke)
   - [REFERENCE: License](#reference-license)
+  - [REFERENCE: TODO for this `README.md`](#reference-todo-for-this-readmemd)
 
 ## REFERENCE: Project Status
 
 **Current status**: Project is in its very initial development and planning phase.
+
+## REFERENCE: Our Current Roadmap for KATKE
+
+- **2025 Q4**: Our first official Alpha release demonstrating at least some level of functionality; and demonstrating our vision for what's to come
 
 ## REFERENCE: Our Current Vision for KATKE
 
@@ -43,16 +47,6 @@ A code editor not too different from a newspaper in looks and feel. Designed to 
   - [Chosen due to our need for pixel-perfect precision, and our need to have the ability to define custom UI behaviour to optimise our UI, make the workflw efficient, and ensure we can make a "fun" tool--we previosly considered frameworks like Electron, Flet, etc and found them not to fit our needs, due to us circling around to our believe in the need to have flexibility and deterministic behaviour in how we do things.]
   - Docs: https://pyga.me/docs/
 
-## REFERENCE: TODO for this `README.md`
-
-- [ ] Add "practical" section on installing KATKE
-- [ ] Add "practical" section on setting up a dev enviroment for working on developing KATKE
-
-
-## REFERENCE: Our Current Roadmap for KATKE
-
-- **2025 Q4**: Our first official Alpha release demonstrating at least some level of functionality; and demonstrating our vision for what's to come
-
 ## REFENCE: Contributing to KATKE
 
 We welcome contributions. If you wish to contribute to KATKE please consider opening a GitHub Issue first to discuss your contribution ideas and how they fit into the wider project and its priorities before contributing--we intend to swiftly respond to any Issues and Pull Requests opened in our GitHub repository (https://github.com/KATKE-GROUP/KATKE).
@@ -62,3 +56,8 @@ Especially as this project (KATKE) matures we will focus on making this an amazi
 ## REFERENCE: License
 
 KATKE is a permissive open-source project licensed under the Apache 2.0 license.
+
+## REFERENCE: TODO for this `README.md`
+
+- [ ] Add "practical" section on installing KATKE
+- [ ] Add "practical" section on setting up a dev enviroment for working on developing KATKE
