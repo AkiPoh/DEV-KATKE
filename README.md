@@ -84,7 +84,7 @@ KATKE is being built for:
 
 We believe in continuous innovation. This means we prioritize breakthrough features over maintaining legacy code. By extension, we believe that backwards compatibility on the "main" branch version is not a major priority--due to the need to have the flexibility required to innovate with low-friction, and not be limited by past decisions, that might not fit our and our users modern needs the best.
 
-We believe true and transparent reproducibility comes from using the same tool version, the same way, to achieve the same outcome. We intend to with native solutions to enable such rapid version hopping between tool versions, to ensure smooth usage experience for project developers, across multiple projects.
+**We believe true and transparent reproducibility comes from using the same tool version, the same way, to achieve the same outcome.** We intend to with native solutions to enable such rapid version hopping between tool versions, to ensure smooth usage experience for project developers, across multiple projects.
 
 Looking ahead, we currently plan to employ bi-annual LTS "branch" edition "fork" releases that will receive indefinite support. This approach allows us to maintain momentum and agility on the "main" branch. While ensuring we can offer tooling that serves the need for longer supported versions with relevant security updates for longer projects.
 
