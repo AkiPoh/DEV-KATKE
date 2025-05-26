@@ -6,18 +6,21 @@ KATKE will be an app that seamlessly integrates code editing, compilation, and d
 
 We intend to employ, enhance, and augment existing solutions wherever possible, building upon established foundations like Rust, Python, Git, and semantically correct project structures.
 
-KATKE is a permissive open-source project licensed under the Apache 2.0 license.
-
 ## REFERENCE: The Current Project Status for KATKE
 
 **CURRENTLY IN EARLY DEVELOPMENT / UNVERIFIED**
 
 **Current status**: Project is in its very initial development and planning phase. We currently have really nothing concrete to show you guys--but we hope for that to change in the near-future.
 
+## REFERENCE: License for the KATKE project
+
+KATKE is a permissive open-source project licensed under the Apache 2.0 license.
+
 ## REFERENCE-TABLE: Table of Contents
 
 - [KATKE](#katke)
   - [REFERENCE: The Current Project Status for KATKE](#reference-the-current-project-status-for-katke)
+  - [REFERENCE: License for the KATKE project](#reference-license-for-the-katke-project)
   - [REFERENCE-TABLE: Table of Contents](#reference-table-table-of-contents)
   - [REFERENCE: Our Current Roadmap for KATKE](#reference-our-current-roadmap-for-katke)
     - [First Alpha Version (Targeting: 2025 Q4) of KATKE](#first-alpha-version-targeting-2025-q4-of-katke)
@@ -31,7 +34,6 @@ KATKE is a permissive open-source project licensed under the Apache 2.0 license.
   - [REFERENCE: Communication Channels for KATKE and Contributing to KATKE](#reference-communication-channels-for-katke-and-contributing-to-katke)
     - [REFERENCE: Official Communication Channels for KATKE](#reference-official-communication-channels-for-katke)
     - [REFERENCE: Contributing to KATKE](#reference-contributing-to-katke)
-  - [REFERENCE: License for the KATKE project](#reference-license-for-the-katke-project)
   - [REFERENCE: TODO for this `README.md`](#reference-todo-for-this-readmemd)
 
 ## REFERENCE: Our Current Roadmap for KATKE
@@ -109,10 +111,6 @@ We welcome contributions. If you wish to contribute to KATKE please consider ope
 We intend to swiftly respond to any Issues and Pull Requests opened in our GitHub repository (https://github.com/KATKE-GROUP/KATKE).
 
 As this project (KATKE) matures we will especially focus on making this an amazing project to contribute to for all kinds of contributors.
-
-## REFERENCE: License for the KATKE project
-
-KATKE is a permissive open-source project licensed under the Apache 2.0 license.
 
 ## REFERENCE: TODO for this `README.md`
 
