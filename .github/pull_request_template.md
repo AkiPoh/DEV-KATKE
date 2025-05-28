@@ -24,7 +24,7 @@
 <!-- Explain trade-offs or design decisions made, etc -->
 
 <!-- Good faith matters most - share what you know, even if incomplete -->
-<!-- Clearly note any uncertainty, ambiguity or missing information -->
+<!-- Clearly note any uncertainty, ambiguity, missing information, etc -->
 <!-- This section will serve as initial reference material for changes made -->
 
 ### Proposed Further Actions
@@ -49,4 +49,4 @@
 
 - [ ] I understand that this project (https://github.com/KATKE-GROUP/KATKE) is licensed under the Apache 2.0 license
 - [ ] I have read through and understood the full Apache 2.0 license
-- [ ] I have carefully completed and reviewed this checklist before submitting this pull request
+- [ ] I have carefully reviewed this checklist before submitting this pull request
