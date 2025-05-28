@@ -6,6 +6,7 @@
 <!-- STRUCTURE: -->
 <!-- "Thesis" section: Present your complete case for this PR -->
 <!-- "Brief Overview" section: Condense your thesis into a brief overview -->
+<!-- "Checklist" section: Provide input on critical checklist items -->
 
 ## Thesis
 
@@ -46,6 +47,9 @@
 <!-- INSTRUCTIONS: -->
 <!-- Unchecked checklist item looks like this: "[ ]" -->
 <!-- Checked checklist item looks like this: "[x]" -->
+
+<!--Checklist item being **unchecked** means you **do not agree** with the statement -->
+<!--Checklist item being **checked** means you **agree** with the statement made -->
 
 - [ ] I understand that this project (https://github.com/KATKE-GROUP/KATKE) is licensed under the Apache 2.0 license
 - [ ] I have read through and understood the full Apache 2.0 license
