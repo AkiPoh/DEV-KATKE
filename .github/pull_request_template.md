@@ -37,3 +37,12 @@
 
 ### Brief Overview of Changes Made and Proposed Further Actions Briefly
 <!-- Summarize the changes made and proposed further actions into a few key points -->
+
+## Checklist
+<!-- Please carefully go through this checklist -->
+<!-- INSTRUCTIONS: -->
+<!-- Unchecked checklist item looks like this: "[ ]" -->
+<!-- Checked checklist item looks like this: "[x]" -->
+
+- [ ] I understand that this project (https://github.com/KATKE-GROUP/KATKE) is licensed under the Apache 2.0 license
+- [ ] I in good faith have read through and understood the full Apache 2.0 license
