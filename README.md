@@ -14,7 +14,7 @@ We intend to employ, enhance, and augment existing solutions wherever possible, 
 
 ## REFERENCE: License for the KATKE project
 
-KATKE is a permissive open-source project licensed under the Apache 2.0 license.
+KATKE is a permissive open-source project licensed under the Apache 2.0 license. See: [LICENSE](./LICENSE) for details.
 
 ## REFERENCE-TABLE: Table of Contents
 
