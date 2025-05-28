@@ -21,11 +21,10 @@ assignees: ''
 
 ### Argument
 <!-- State your issue or idea as a clear argument -->
-<!-- This helps us evaluate the issue effectively -->
+<!-- This helps us evaluate it effectively -->
 
 ### Relevant Context, Evidence, Proof and Steps-to-Reproduce
 <!-- Provide relevant supporting details for the argument -->
-
 <!-- Good faith matters most - share what you know, even if incomplete -->
 
 ### Proposed Actions
