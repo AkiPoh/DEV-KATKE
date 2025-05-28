@@ -1,3 +1,7 @@
+The following applies to all of the files and directiories within and under this `./.vscode` directory.
+
+(This `NOTICE.md` file is within the `./.vscode` directory)
+
 ```txt
 Copyright 2025 by Contributors
 
@@ -13,5 +17,3 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
-
-[ ] TODO: evaluate what default Markdown formatter to configure in settings.json; either Prettier or Markdown All in One are the likely two choices
