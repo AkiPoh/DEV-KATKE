@@ -53,5 +53,9 @@
 
 - [ ] I understand that this project (https://github.com/KATKE-GROUP/KATKE) is licensed under the Apache 2.0 license
 - [ ] I have read through and understood the full Apache 2.0 license
+
+- [ ] I understand that by making this pull request I'm making a "Submission of Contributions" as specified by the §5 in the Apache 2.0 license
+- [ ] I have the relevant rights to make a "Submission of Contributions" as specified by the §5 in the Apache 2.0 licence
+
 - [ ] I have carefully reviewed this checklist before submitting this pull request
 - [ ] I have **not** carefully reviewed this checklist before submitting this pull request
