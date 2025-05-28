@@ -48,14 +48,14 @@
 <!-- Unchecked checklist item looks like this: "[ ]" -->
 <!-- Checked checklist item looks like this: "[x]" -->
 
-<!--Checklist item being **unchecked** means you **do not agree** with the statement -->
-<!--Checklist item being **checked** means you **agree** with the statement made -->
+<!-- Checklist item being **unchecked** means you **do not agree** with the statement -->
+<!-- Checklist item being **checked** means you **agree** with the statement made -->
 
-- [ ] I understand that this project (https://github.com/KATKE-GROUP/KATKE) is licensed under the Apache 2.0 license
-- [ ] I have read through and understood the full Apache 2.0 license
+- [ ] I understand that this project (https://github.com/KATKE-GROUP/KATKE) is licensed under the Apache 2.0 license.
+- [ ] I have read and understood the full Apache 2.0 license.
 
-- [ ] I understand that by making this pull request I'm making a "Submission of Contributions" as specified by the §5 in the Apache 2.0 license
-- [ ] I have the relevant rights to make a "Submission of Contributions" as specified by the §5 in the Apache 2.0 licence
+- [ ] I understand that by making this pull request, I'm making a "Submission of Contributions" as specified by §5 of the Apache 2.0 license.
+- [ ] I have the relevant rights to make this "Submission of Contributions" as specified by §5 of the Apache 2.0 license.
 
-- [ ] I have carefully reviewed this checklist before submitting this pull request
-- [ ] I have **not** carefully reviewed this checklist before submitting this pull request
+- [ ] I have carefully reviewed this checklist before submitting this pull request.
+- [ ] I have **not** carefully reviewed this checklist before submitting this pull request.
