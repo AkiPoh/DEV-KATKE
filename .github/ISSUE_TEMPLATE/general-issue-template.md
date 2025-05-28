@@ -20,7 +20,7 @@ assignees: ''
 
 ### Argument
 <!-- State your issue or idea as a clear argument -->
-<!-- This helps us evaluate it effectively -->
+<!-- This helps us evaluate the issue effectively -->
 
 ### Relevant Context, Evidence, Proof and Steps-to-Reproduce
 <!-- Provide relevant supporting details for the argument -->
@@ -39,4 +39,4 @@ assignees: ''
 
 
 ### Brief Overview of Proposed Actions
-<!-- Summarise your proposed actions into a few key points -->
+<!-- Summarize your proposed actions into a few key points -->
