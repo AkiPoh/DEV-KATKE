@@ -1,6 +1,6 @@
-The following applies to all of the files within and under this `.vscode` directory, which cannot include license headers directly due to their file format restrictions.
+The following applies to the `.python-version` and `uv.lock` files in this "root directory", which cannot include license headers directly due to their file format restrictions.
 
-The following also applies to this `NOTICE.md` file within the `.vscode` directory.
+The following also applies to this `NOTICE.md` file within the "root directory".
 
 ```txt
 Copyright 2025 by Contributors
