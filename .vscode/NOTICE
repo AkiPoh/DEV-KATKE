@@ -1,8 +1,7 @@
-The following applies to the `.python-version` and `uv.lock` files in this "root directory", which cannot include license headers directly due to their file format restrictions.
+The following applies to the "extensions.json" and "settings.json" files in this ".vscode" directory, which cannot include license headers directly due to their file format restrictions.
 
-The following also applies to this `NOTICE.md` file within the "root directory".
+The following also applies to this "NOTICE" file within the ".vscode" directory.
 
-```txt
 Copyright 2025 by Contributors
 
 Licensed under the Apache License, Version 2.0 (the "License");
@@ -16,4 +15,3 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
-```
