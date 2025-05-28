@@ -73,10 +73,10 @@ limitations under the License.
 <!--Checklist item being **unchecked** means you **do not agree** with the statement -->
 <!--Checklist item being **checked** means you **agree** with the statement made -->
 
-- [ ] I understand that this project (https://github.com/KATKE-GROUP/KATKE) is licensed under the Apache 2.0 license
-- [ ] I have read through and understood the full Apache 2.0 license
+- [ ] I understand that this project (https://github.com/KATKE-GROUP/KATKE) is licensed under the Apache 2.0 license.
+- [ ] I have read through and understood the full Apache 2.0 license.
 
-- [ ] I have carefully reviewed this pull request message before submitting this pull request.
+- [ ] I have carefully reviewed this pull request message before submitting this issue.
 
-- [ ] I have carefully reviewed this checklist before submitting this issue
-- [ ] I have **not** carefully reviewed this checklist before submitting this issue
+- [ ] I have carefully reviewed this checklist before submitting this issue.
+- [ ] I have **not** carefully reviewed this checklist before submitting this issue.
