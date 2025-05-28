@@ -56,3 +56,4 @@ assignees: ''
 - [ ] I understand that this project (https://github.com/KATKE-GROUP/KATKE) is licensed under the Apache 2.0 license
 - [ ] I have read through and understood the full Apache 2.0 license
 - [ ] I have carefully reviewed this checklist before submitting this issue
+- [ ] I have **not** carefully reviewed this checklist before submitting this issue
