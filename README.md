@@ -104,9 +104,9 @@ We believe in continuous innovation. This means we prioritize breakthrough featu
 
 **We believe true and transparent reproducibility comes from using the same tool version, the same way, to achieve the same outcome.** We intend to with native solutions to enable such rapid version hopping between tool versions, to ensure smooth usage experience for project developers, across multiple projects.
 
-Looking ahead, every two years we currently plan to create LTS "branch" edition "fork" releases that will receive indefinite support. This approach allows us to maintain momentum and agility on the "main" branch. While ensuring we can offer tooling that serves the need for longer supported versions with relevant security updates for longer projects.
+Looking ahead, when we achieve the desire and production-ready readiness for such. Every two years we plan to initiate a new LTS edition branch off of the `main` branch that will receive indefinite support. This approach allows us to maintain momentum and agility on the "main" branch. While ensuring we can offer tooling that serves the need for longer supported versions with relevant security updates for longer projects.
 
-Cross compatibility between LTS editions will not be a priority. But for updates within specific LTS editions backwards and forwards compatibility is an absolute priority.
+Cross compatibility between LTS editions will not be a priority. But for updates within a specific LTS branch backwards and forwards compatibility is an absolute priority.
 
 #### REFERENCE: "Main" Branch Development Practices for KATKE
 
