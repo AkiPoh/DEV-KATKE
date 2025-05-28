@@ -21,8 +21,11 @@
 ### Changes Made
 <!-- Comprehensively outline the specific changes implemented in this PR -->
 <!-- Include technical details, new files, modified functionality, etc -->
-<!-- Explain trade-offs or design decisions made -->
-<!-- Good faith matters most - though in this case clearly note any uncertainty, or ambiguity, etc since we'll need to craft a good commit message for the eventual merge--and this'll serve as a major supporting material -->
+<!-- Explain trade-offs or design decisions made, etc -->
+
+<!-- Good faith matters most - share what you know, even if incomplete -->
+<!-- Clearly note any uncertainty, ambiguity or missing information -->
+<!-- This section will serve as initial reference material for changes made -->
 
 ### Proposed Further Actions
 <!-- What actions do you propose we take with this PR? -->
