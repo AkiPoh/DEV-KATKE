@@ -23,6 +23,7 @@
 <!-- Comprehensively outline the specific changes implemented in this PR -->
 <!-- Include technical details, new files, modified functionality, etc -->
 <!-- Explain trade-offs or design decisions made, etc -->
+
 <!-- Good faith matters most - share what you know, even if incomplete -->
 <!-- Clearly note any uncertainty, ambiguity, missing information, etc -->
 <!-- This section will serve as initial reference material for changes made -->
@@ -48,7 +49,7 @@
 <!-- Checked checklist item looks like this: "[x]" -->
 
 <!--Checklist item being **unchecked** means you **do not agree** with the statement -->
-<!--Checklist item being **checked** means you **agree** with the statement -->
+<!--Checklist item being **checked** means you **agree** with the statement made -->
 
 - [ ] I understand that this project (https://github.com/KATKE-GROUP/KATKE) is licensed under the Apache 2.0 license
 - [ ] I have read through and understood the full Apache 2.0 license
