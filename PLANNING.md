@@ -3,6 +3,8 @@
 ## Table of Contents
 - [Planning 2025 MVP of KATKE](#planning-2025-mvp-of-katke)
   - [Table of Contents](#table-of-contents)
+  - [Implementation Roadmap](#implementation-roadmap)
+    - [Stage 1: Font Rendering and Hard-Coded Character Box](#stage-1-font-rendering-and-hard-coded-character-box)
   - [First MVP Step](#first-mvp-step)
   - [Strategic Development Approach](#strategic-development-approach)
     - [How Will This Integrate to KATKE as it Matures?](#how-will-this-integrate-to-katke-as-it-matures)
@@ -16,6 +18,22 @@
     - [Context-Aware UI](#context-aware-ui)
   - [Success Metrics](#success-metrics)
   - [Research Questions](#research-questions)
+
+## Implementation Roadmap
+
+### Stage 1: Font Rendering and Hard-Coded Character Box
+
+**Sub-stages:**
+1. **Font Rendering:**
+   - Choose a specific nicely licensed font, and integrate it into the project
+     - The font should go along with the project, to ensure concistency and reliability
+     - Note the need for extended character character set support
+     - Consider whether the Atkinson Hyperlegible Mono fits our needs
+   - Black text on a white background
+
+2. **Hard-Coded Character Box**:
+ - Display a specified-before-launch hard-coded grid of characters of before-launch specified size
+ - Consider array backed system for displaying characters
 
 ## First MVP Step
 
