@@ -6,6 +6,9 @@
   - [Implementation Roadmap](#implementation-roadmap)
     - [Stage 1: Font Rendering and Hard-Coded Character Box](#stage-1-font-rendering-and-hard-coded-character-box)
     - [Stage 2: Keyboard Cursor Navigation](#stage-2-keyboard-cursor-navigation)
+    - [Stage 3: Hard-Coded Character Placement](#stage-3-hard-coded-character-placement)
+    - [Stage 4: Continuous Drawing Mode](#stage-4-continuous-drawing-mode)
+    - [Stage 5: Character Overwriting System](#stage-5-character-overwriting-system)
   - [First MVP Step](#first-mvp-step)
   - [Strategic Development Approach](#strategic-development-approach)
     - [How Will This Integrate to KATKE as it Matures?](#how-will-this-integrate-to-katke-as-it-matures)
@@ -45,6 +48,32 @@
 2. **Baic Text Cursor Movement via Keyboard Input:**
    - Move text cursor with keyboard arrow keys
      - Moving within the character box constrains
+
+### Stage 3: Hard-Coded Character Placement
+
+**Sub-Stages:**
+1. **Display a Hard-Coded Character at a Specified Position:**
+   - Display a hard-coded character (like "#") at a position specified before application launch.
+2. **Place a Character Text Cursor Postion**
+   - Place a hard-coded character at the text cursor position when the user pressed the "spacebar"
+
+### Stage 4: Continuous Drawing Mode
+
+**Sub-Stages:**
+1. **Toggle an Indicator by Pressing "E"**
+   - Enable/disable with specific key (maybe 'E' for continious mode toggle)
+   - Visual indicator showing when continuous mode is active
+2. **Actual Continuous Drawing Mode Implementation**
+- Based on toggle status automatically place characters where the text cursor is, even when it moves
+
+### Stage 5: Character Overwriting System
+
+**Sub-Stages:**
+1. **More Characters - Freedom!**
+   - Introduce second character option (like '*' alongside '#', and of course space ' ')
+   - Key to switch between the two character types (maybe mapped to "1", "2" and "0" on keyboard)
+2. **Overwriting characters**
+   - Any new character placement on top of an old one overwrites whatever was previously at that position
 
 ## First MVP Step
 
