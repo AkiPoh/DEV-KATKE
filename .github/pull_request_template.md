@@ -19,7 +19,7 @@
 - [ ] I have read and understood the full Apache 2.0 license. (https://www.apache.org/licenses/LICENSE-2.0)
 
 - [ ] I'm making a "Submission of Contributions" as specified by section 5 of the Apache 2.0 license.
-- [ ] I have the relevant legal rights to make this "Submission of Contributions."
+- [ ] I have the relevant legal rights to make this "Submission of Contributions".
 
 - [ ] I have carefully reviewed this pull request before submitting it.
 
