@@ -1,5 +1,22 @@
 # Planning 2025 MVP of KATKE
 
+## Table of Contents
+- [Planning 2025 MVP of KATKE](#planning-2025-mvp-of-katke)
+  - [Table of Contents](#table-of-contents)
+  - [First MVP step](#first-mvp-step)
+  - [Strategic Development Approach](#strategic-development-approach)
+    - [How Will This Integrate to KATKE as it Matures?](#how-will-this-integrate-to-katke-as-it-matures)
+    - [The Vision Connection](#the-vision-connection)
+  - [Technical Implementation Plan](#technical-implementation-plan)
+    - [Core Features](#core-features)
+    - [Assembly Architecture](#assembly-architecture)
+    - [Layering System](#layering-system)
+  - [Advanced and *Intuitive* UI Systems](#advanced-and-intuitive-ui-systems)
+    - [Philosopy: Hardened *Intuitive* UI](#philosopy-hardened-intuitive-ui)
+    - [Context-Aware UI](#context-aware-ui)
+  - [Success Metrics](#success-metrics)
+  - [Research Questions](#research-questions)
+
 ## First MVP step
 
 One might think we should focus on creating a usable text editor first. *But we choose to think different!*
@@ -45,18 +62,18 @@ Work done on the ASCII art creator will contribute to our larger goal of creatin
 
 ### Core Features
 
-Everything keyoboard and mouse mapped, based on preference. Accessability will be somewhat of a priority too, though not an overwhelming one yet.
+Everything keyboard and mouse mapped, based on preference. Accessibility will be somewhat of a priority too, though not an overwhelming one yet.
 
 - **Brush Stroke Tools**
   - **Types:**
     - Basic brush with adjustable size and character sets
-    - Eraser (probably built similary to the basic brush)
+    - Eraser (probably built similarly to the basic brush)
     - Intelligent brush for contextual characters (diagonal connectors, corners, etc.)
   - These will aim to feel amazing, being the default tools
 
-- **Miscalenous Tools**
+- **Miscellaneous Tools**
   - **Types:**
-    - Pain bucket
+    - Paint bucket
 
 - **Shape Creation Tools**
   - **Types:**
@@ -95,6 +112,40 @@ Everything in the ASCII art creator canvas is an "assembly" - a coherent unit th
 
 The goal is extreme intuitiveness - enabling complex diagram creation in under 30 seconds through natural, discoverable interactions.
 
+## Advanced and *Intuitive* UI Systems
+
+### Philosopy: Hardened *Intuitive* UI
+
+The ASCII art creator will employ an advanced but also relative basic hardened purposeful advanced UI system, creating an interface that collaborates with the user rather than simply responding to commands.
+
+### Context-Aware UI
+
+**Hierarchical X-Ray Vision:**
+- **On-Demand**: When required or relevant users can see "through" layers in a hierachically logical manner, allowing for viewing elements behind others, as they sit in the layering system
+- **Powered by Smart Transparency**
+
+**Non-ASCII UI Elements:**
+- **Content vs. Guidance Distinction**: Clean ASCII output remains exportable while guiding elements (wireframes, crosshairs, alignment guides) exist in "separate" paradigm
+- **Operation-Specific Visualization**: Each tool reveals its own contextual visual language, for example:
+  - Box creation can show alignment grids and snap points
+  - Text placement can show guides 
+  - Arc creation can show radius center and curve non-"rasterised" previews
+  - Delete operations can flash targeted elements for precision confirmation, and also show in X-ray for seeing all effects
+  
+**Highlighting**
+- **Text background color can be chosen**: enables more intuitive features, such as highlighting selected elements with yellow, or elements with red highlights when hovering with the delete tool enabled, etc
+
+**Adaptive Guide Systems:**
+- **Intelligent Crosshairs**: Advanced crosshair functionality that adapts to current tool and context
+- **Arbitrary Line Drawing**: Support for drawing alignment guides and structural helpers
+- **Assembly-Aware Snapping**: Grid overlays and snap guides that understand assembly boundaries and relationships
+
+**Contextual Intelligence:**
+- **Present When Needed**: Visual aids appear precisely when they add value to the current operation--or they can be nearly completely disabled
+- **Out of the Way**: Structural elements hide gracefully when focus should be on content creation
+
+This creates an interface that feels intuitive - revealing exactly what users need to see, when they need to see it, without creating visual overwhelm. The system becomes a collaborative partner in the creative process.
+
 ## Success Metrics
 
 **30-Second Diagram Goal**: A developer should be able to create a reasonably complex system diagram from scratch in under 30 seconds using intuitive, keyboard-accessible commands.
@@ -108,7 +159,9 @@ As we build, we're exploring fundamental questions about interface design:
 - What makes assembly selection and modification feel natural?
 - How can layering be both powerful and intuitive?
 - What interaction patterns make tool switching feel seamless?
+- How can contextual visual intelligence enhance creativity without creating distraction?
+- What makes an interface feel collaborative rather than merely responsive?
 
 These discoveries will inform KATKE's entire approach to reimagining development environments.
 
-The ASCII art editor isn't just our first feature - it's our laboratory for discovering what coding tools could become.
+The ASCII art creator isn't just our first feature - it's our laboratory for discovering what coding tools could become.
