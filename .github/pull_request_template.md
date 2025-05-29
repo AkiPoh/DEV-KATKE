@@ -41,8 +41,6 @@ Copyright 2025 by Contributors - Licensed under the Apache 2.0 license - As part
 - [ ] I have carefully reviewed this checklist before submitting this pull request.
 - [ ] I have **not** carefully reviewed this checklist before submitting this pull request.
 
-<!-- Do not change the lines above, if you do not understand what they're saying -->
-
 ## Thesis
 
 ### Argument
