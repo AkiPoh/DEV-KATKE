@@ -24,20 +24,20 @@
 
 - **Establish Copyright Knowledge:**
 <!-- Contributing to open source requires understanding the legal framework -->
-<!-- Preferably you should be in  a position to agree with the two statements -->
+<!-- Preferably you should be in a position to agree with the two statements -->
 - [ ] I understand that this project (https://github.com/KATKE-GROUP/KATKE) is licensed under the Apache 2.0 license.
 - [ ] I have read and understood the full Apache 2.0 license.
 
 - **Define the Legal Nature of This Pull Request:**
 <!-- Clear contribution terms benefit everyone -->
-<!-- Preferably you should be in  a position to agree with the three statements -->
+<!-- Preferably you should be in a position to agree with the three statements -->
 - [ ] I understand that by making this pull request, I'm making a "Submission of Contributions" as specified by §5 of the Apache 2.0 license.
 - [ ] I also include the "message text body" of this pull request in this "Submission of Contributions".
 - [ ] I have the relevant rights to make this "Submission of Contributions".
 
 - **Answer a Few Important Questions:**
 <!-- Quality contributions require careful review -->
-<!-- Preferably you should be in a postion to agree with the first two statements, -->
+<!-- Preferably you should be in a position to agree with the first two statements, -->
 <!-- and disagree with the last one -->
 - [ ] I have carefully reviewed this pull request message before submitting this pull request.
 - [ ] I have carefully reviewed this checklist before submitting this pull request.
