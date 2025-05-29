@@ -38,8 +38,7 @@
 <!-- Comprehensively outline the specific changes implemented in this PR -->
 <!-- Include technical details, new files, modified functionality, etc -->
 <!-- Explain trade-offs or design decisions made, etc -->
-
-<!-- Good faith matters most - share what you know, even if incomplete -->
+<!-- GOOD FAITH MATTERS MOST - share what you know, even if incomplete -->
 <!-- Clearly note any uncertainty, ambiguity, missing information, etc -->
 <!-- This section will serve as initial reference material for changes made -->
 
