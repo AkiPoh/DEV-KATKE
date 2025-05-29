@@ -2,29 +2,31 @@
 
 ## First MVP step
 
-One might think we should focus on creating a usable text editor first. We do not agree with that approach.
+One might think we should focus on creating a usable text editor first. *But we choose to think different!*
 
-We will be making an ASCII art editor first. That should be our initial feature.
+We will be making an ASCII art creator first. This will be our very first "full" feature.
 
 **Why?**
 
-The ASCII art editor serves as our UX innovation laboratory - a controlled environment for discovering and refining the cutting-edge interaction paradigms that will define KATKE's approach to making coding genuinely fun and intuitive.
+The ASCII art creator serves as our very first UX innovation experiment - as a low-stakes environment for discovering and refining the cutting-edge interaction standards that will define KATKE's approach to making coding genuinely fun and intuitive.
 
 **Strategic Rationale:**
-- **UX Research Lab**: We need to learn how to create novel, delightful interactions before applying them to the complexities of a full development environment
-- **Immediate Coding Relevance**: ASCII art directly serves core development workflows - creating diagrams, flowcharts, system architecture sketches, and visual documentation that renders natively across all platforms
-- **Low-Stakes Innovation**: We can experiment with radical interface ideas without the pressure of maintaining compatibility with existing coding conventions
-- **Demonstration of Capability**: Proves our ability to create tools that feel fundamentally different and more engaging than conventional development software
+- **UX Research Experiment**: We need to learn how to create novel, delightful interactions before applying them to the complexities of a full development environment
+- **Immediate Coding Relevance**: ASCII art directly serves core development workflows - quickly on-the-go creating diagrams, flowcharts, system architecture sketches, and visual documentation that renders natively across practically all platforms
+- **Low-Stakes Innovation**: We can experiment with radical interface ideas without the pressure of dealing with existing coding conventions
+- **Demonstration of Capability**: Proves our ability to create tools that feel fundamentally different and more engaging than conventional modern software
 
-We do not need to immediately begin worrying about file browsing, syntax highlighting, or project management. We can initially offer a powerful "scratchpad" from which people can copy ASCII art as needed, while we discover what makes interfaces feel magical.
+By choosing this as our first experiment, we do not need to immediately begin worrying about file browsing, syntax highlighting, or project management. 
 
-This demonstrates our commitment to redefining developer experiences through genuinely innovative interaction design.
+We can initially offer a powerful "scratchpad" from which people can copy ASCII art as needed, while we discover and hone-in what makes interfaces feel magical.
+
+This experiment will demonstrate our commitment to redefining developer experiences through genuinely innovative interaction design.
 
 ## Strategic Development Approach
 
-### The Experimental Phase
+### How Will This Integrate to KATKE as it Matures?
 
-The ASCII art tool will exist as a native extension within KATKE - clearly part of the application but intentionally using proprietary approaches and remaining somewhat disconnected from other components. This "everything a bit disconnected" approach is deliberate:
+The ASCII art creator will exist as a native extension within KATKE - clearly part of the application but intentionally--at least initially--using proprietary approaches and remaining somewhat disconnected from other components. This "everything a bit disconnected" approach is deliberate, allowing for:
 
 - **Exploration Over Integration**: We need space to discover new paradigms before architecting them into cohesive systems
 - **Learning Through Making**: The most important insights will emerge from building and using, not from theoretical design
@@ -32,7 +34,8 @@ The ASCII art tool will exist as a native extension within KATKE - clearly part 
 
 ### The Vision Connection
 
-Every interaction pattern we discover in the ASCII art editor contributes to our larger goal of creating a "newspaper-inspired" development environment that rivals Scratch's intuitiveness while producing production-grade results. The spatial reasoning, assembly management, and layering concepts we develop will inform how we approach:
+Work done on the ASCII art creator will contribute to our larger goal of creating a "newspaper-inspired" development environment that rivals Scratch's intuitiveness while producing production-grade results. Things such as the spatial reasoning, assembly management, and layering concepts we develop will inform how we approach:
+
 - Code organization and navigation
 - Project structure visualization  
 - Multi-file editing workflows
@@ -42,28 +45,39 @@ Every interaction pattern we discover in the ASCII art editor contributes to our
 
 ### Core Features
 
-- **Brush System**
-  - Basic brush with adjustable size and character sets
-  - Intelligent brush for contextual characters (diagonal connectors, corners, etc.)
-  - Single character precision with assembly awareness
+Everything keyoboard and mouse mapped, based on preference. Accessability will be somewhat of a priority too, though not an overwhelming one yet.
+
+- **Brush Stroke Tools**
+  - **Types:**
+    - Basic brush with adjustable size and character sets
+    - Eraser (probably built similary to the basic brush)
+    - Intelligent brush for contextual characters (diagonal connectors, corners, etc.)
+  - These will aim to feel amazing, being the default tools
+
+- **Miscalenous Tools**
+  - **Types:**
+    - Pain bucket
 
 - **Shape Creation Tools**
-  - Rectangle creator (square and rectangular forms)
-  - Circle creator with proper ASCII approximation
-  - Arc creator for complex diagrams
-  - Basic textbox/text writer integration
+  - **Types:**
+    - Rectangle creator (square and rectangular forms)
+    - Circle creator with proper ASCII approximation
+    - Arc creator for complex diagrams
 
-- **Advanced Manipulation**
-  - Eraser (requires research into intuitive erasing behavior)
-  - Paint bucket (requires exploration of ASCII flood-fill patterns)
-  - Move operations:
+- **Text Creation Tools:**
+  - **Types:**
+      - Basic label/text creator and modifier
+
+- **Manipulation Tools**
+  - **Types**
     - Move complete assemblies as units
-    - Move individual elements (breaks assembly relationships)
     - Move assembly anchor points for resizing
+    - Move individual elements (breaks assembly relationships)
+    - Delete assemblies tool
 
 ### Assembly Architecture
 
-Everything in KATKE operates as an "assembly" - a coherent unit that maintains its identity and relationships even when partially obscured or modified.
+Everything in the ASCII art creator canvas is an "assembly" - a coherent unit that maintains its identity and relationships even when partially obscured or modified.
 
 **Assembly Characteristics:**
 - **Layered by Default**: A rectangle assembly remains a complete rectangle even when other elements are drawn over it
@@ -74,8 +88,9 @@ Everything in KATKE operates as an "assembly" - a coherent unit that maintains i
 ### Layering System
 
 **Intuitive Depth Management:**
-- **"None" as Valid State**: Empty spaces don't interfere with underlying layers - they remain transparent
+- **"Transparent" as a distinct element/character State**: "transparent" elements don't interfere with underlying layers - they remain transparent
 - **Assembly Panel**: Visual interface for adjusting layer order and assembly relationships  
+  - Also supports grouping assemblies, for easier management
 - **Drag-Through Capability**: Complete assemblies can be pulled out from under other elements without pixel-by-pixel editing
 
 The goal is extreme intuitiveness - enabling complex diagram creation in under 30 seconds through natural, discoverable interactions.
