@@ -9,14 +9,10 @@
 <!-- "Brief Overview" section: Condense your thesis into a brief overview -->
 
 ## Checklist
-<!-- Please carefully go through this checklist -->
-
 <!-- INSTRUCTIONS: -->
-
-<!-- Unchecked checklist item looks like this: "[ ]", -->
+<!-- UNCHECKED CHECKLIST ITEM LOOKS LIKE THIS: "[ ]", -->
 <!-- this means that you disagree with the statement made.  -->
-
-<!-- Checked checklist item looks like this: "[x]" -->
+<!-- CHECKED CHECKLIST ITEM LOOKS LIKE THIS: "[x]" -->
 <!-- this means that you agree with the statement made.  -->
 
 - [ ] I understand that this KATKE (https://github.com/KATKE-GROUP/KATKE) project  is licensed under the Apache 2.0 license.
