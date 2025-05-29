@@ -1,7 +1,5 @@
-Copyright 2025 by Contributors - Licensed under the Apache 2.0 license - As part of the KATKE (https://github.com/KATKE-GROUP/KATKE) project.
-
-(If applicable,) refer to the checklist for modifications copyright.
-
+- Copyright 2025 by Contributors - Licensed under the Apache 2.0 license - As part of the KATKE (https://github.com/KATKE-GROUP/KATKE) project.
+- (If applicable,) refer to the checklist for modifications copyright.
 <!-- Do not change the lines above, if you do not understand what they're saying -->
 
 <!-- INSTRUCTIONS: -->
@@ -24,19 +22,23 @@ Copyright 2025 by Contributors - Licensed under the Apache 2.0 license - As part
 <!-- Checklist item being **unchecked** means you **do not agree** with the statement -->
 <!-- Checklist item being **checked** means you **agree** with the statement made -->
 
-**Establish Copyright Knowledge:**
-
+- **Establish Copyright Knowledge:**
+<!-- Contributing to open source requires understanding the legal framework -->
+<!-- Preferably you should be in  a position to agree with the two statements -->
 - [ ] I understand that this project (https://github.com/KATKE-GROUP/KATKE) is licensed under the Apache 2.0 license.
 - [ ] I have read and understood the full Apache 2.0 license.
 
-**Define the Legal Nature of This Pull Request:**
-
+- **Define the Legal Nature of This Pull Request:**
+<!-- Clear contribution terms benefit everyone -->
+<!-- Preferably you should be in  a position to agree with the three statements -->
 - [ ] I understand that by making this pull request, I'm making a "Submission of Contributions" as specified by §5 of the Apache 2.0 license.
 - [ ] I also include the "message text body" of this pull request in this "Submission of Contributions".
 - [ ] I have the relevant rights to make this "Submission of Contributions".
 
-**Answer a Few Important Questions:**
-
+- **Answer a Few Important Questions:**
+<!-- Quality contributions require careful review -->
+<!-- Preferably you should be in a postion to agree with the first two statements, -->
+<!-- and disagree with the last one -->
 - [ ] I have carefully reviewed this pull request message before submitting this pull request.
 - [ ] I have carefully reviewed this checklist before submitting this pull request.
 - [ ] I have **not** carefully reviewed this checklist before submitting this pull request.

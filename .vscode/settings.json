@@ -9,7 +9,6 @@
     },
     "editor.insertSpaces": true,
     "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
     "files.eol": "\n",
     "editor.rulers": [
         88
