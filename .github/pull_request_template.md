@@ -1,8 +1,8 @@
-`Copyright 2025 by Contributors - Licensed under the Apache 2.0 license - As part of the KATKE (https://github.com/KATKE-GROUP/KATKE) project.`
+Copyright 2025 by Contributors - Licensed under the Apache 2.0 license - As part of the KATKE (https://github.com/KATKE-GROUP/KATKE) project.
 
-`For your modifications: add clear notice that this file has been modified, and your own copyright and license if desired. Example approach below.`
+(If applicable,) refer to the checklist for modifications copyright.
 
-`Modifications copyright [current year] by [your name or just "Contributors" for more roundabout approach] - Licensed under the [license name for the license that applies to your modification, or remove this section if irrelevant] license`
+<!-- Do not change the lines above, if you do not understand what they're saying -->
 
 <!-- INSTRUCTIONS: -->
 <!-- These are comments, they're written like this inside arrow-dash brackets -->
@@ -10,9 +10,38 @@
 <!-- These comments are not rendered in the final output -->
 
 <!-- STRUCTURE: -->
+<!-- "Checklist" section: Provide input on critical checklist items -->
 <!-- "Thesis" section: Present your complete case for this PR -->
 <!-- "Brief Overview" section: Condense your thesis into a brief overview -->
-<!-- "Checklist" section: Provide input on critical checklist items -->
+
+## Checklist
+<!-- Please carefully go through this checklist -->
+
+<!-- INSTRUCTIONS: -->
+<!-- Unchecked checklist item looks like this: "[ ]" -->
+<!-- Checked checklist item looks like this: "[x]" -->
+
+<!-- Checklist item being **unchecked** means you **do not agree** with the statement -->
+<!-- Checklist item being **checked** means you **agree** with the statement made -->
+
+**Establish Copyright Knowledge:**
+
+- [ ] I understand that this project (https://github.com/KATKE-GROUP/KATKE) is licensed under the Apache 2.0 license.
+- [ ] I have read and understood the full Apache 2.0 license.
+
+**Define the Legal Nature of This Pull Request:**
+
+- [ ] I understand that by making this pull request, I'm making a "Submission of Contributions" as specified by §5 of the Apache 2.0 license.
+- [ ] I also include the "message text body" of this pull request in this "Submission of Contributions".
+- [ ] I have the relevant rights to make this "Submission of Contributions".
+
+**Answer a Few Important Questions:**
+
+- [ ] I have carefully reviewed this pull request message before submitting this pull request.
+- [ ] I have carefully reviewed this checklist before submitting this pull request.
+- [ ] I have **not** carefully reviewed this checklist before submitting this pull request.
+
+<!-- Do not change the lines above, if you do not understand what they're saying -->
 
 ## Thesis
 
@@ -46,24 +75,3 @@
 
 ### Brief Overview of Changes Made and Proposed Further Actions
 <!-- Summarize the changes made and proposed further actions into a few key points -->
-
-## Checklist
-<!-- Please carefully go through this checklist -->
-
-<!-- INSTRUCTIONS: -->
-<!-- Unchecked checklist item looks like this: "[ ]" -->
-<!-- Checked checklist item looks like this: "[x]" -->
-
-<!-- Checklist item being **unchecked** means you **do not agree** with the statement -->
-<!-- Checklist item being **checked** means you **agree** with the statement made -->
-
-- [ ] I understand that this project (https://github.com/KATKE-GROUP/KATKE) is licensed under the Apache 2.0 license.
-- [ ] I have read and understood the full Apache 2.0 license.
-
-- [ ] I understand that by making this pull request, I'm making a "Submission of Contributions" as specified by §5 of the Apache 2.0 license.
-- [ ] I have the relevant rights to make this "Submission of Contributions" as specified by §5 of the Apache 2.0 license.
-
-- [ ] I have carefully reviewed this pull request message before submitting this pull request.
-
-- [ ] I have carefully reviewed this checklist before submitting this pull request.
-- [ ] I have **not** carefully reviewed this checklist before submitting this pull request.

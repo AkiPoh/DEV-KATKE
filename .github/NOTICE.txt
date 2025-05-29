@@ -1,6 +1,6 @@
 The following applies to the "pull_request_template.md" file in this ".github"
-directory, which is a file/template intended for more flexible use, and has the license
-header omitted to avoid excessive verbosity and confusion.
+directory, which is a file/template intended for more flexible use, and has the full
+license header omitted to avoid excessive verbosity and confusion.
 
 The following also applies to this "NOTICE" file within the ".github" directory.
 
