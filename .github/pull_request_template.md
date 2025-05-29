@@ -22,6 +22,9 @@
 <!-- Checklist item being **unchecked** means you **do not agree** with the statement -->
 <!-- Checklist item being **checked** means you **agree** with the statement made -->
 
+<!-- NOTE: Checklist item agreement preferences are indicated below. Different positions -->
+<!-- might naturally require additional discussion to resolve. -->
+
 - **Establish Copyright Knowledge:**
 <!-- Contributing to open source requires understanding the legal framework -->
 <!-- Preferably you should be in a position to agree with the two statements -->
