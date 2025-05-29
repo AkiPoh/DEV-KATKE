@@ -4,7 +4,7 @@ header omitted to avoid excessive verbosity and confusion.
 
 The following also applies to this "NOTICE" file within the ".github" directory.
 
-These files are part of the KATKE (https://github.com/AkiPoh/DEV-KATKE) project.
+These files are part of the KATKE (https://github.com/KATKE-GROUP/KATKE) project.
 
 Copyright 2025 by Contributors
 

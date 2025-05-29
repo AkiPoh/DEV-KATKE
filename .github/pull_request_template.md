@@ -1,22 +1,8 @@
-<!-- Remove the following license disclaimer if you do not agree to it -->
+`Copyright 2025 by Contributors - Licensed under the Apache 2.0 license - As part of the KATKE (https://github.com/KATKE-GROUP/KATKE) project.`
 
-<!-- BEGINNING OF LICENSE DISCLAIMER-->
-```txt
-Copyright 2025 by Contributors
+`For your modifications: add clear notice that this file has been modified, and your own copyright and license if desired. Example approach below.`
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-```
-<!-- END OF LICENSE DISCLAIMER -->
+`Modifications copyright [current year] by [your name or just "Contributors" for more roundabout approach] - Licensed under the [license name for the license that applies to your modification, or remove this section if irrelevant] license`
 
 <!-- INSTRUCTIONS: -->
 <!-- These are comments, they're written like this inside arrow-dash brackets -->
