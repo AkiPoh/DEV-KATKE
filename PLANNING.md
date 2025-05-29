@@ -5,6 +5,7 @@
   - [Table of Contents](#table-of-contents)
   - [Implementation Roadmap](#implementation-roadmap)
     - [Stage 1: Font Rendering and Hard-Coded Character Box](#stage-1-font-rendering-and-hard-coded-character-box)
+    - [Stage 2: Keyboard Cursor Navigation](#stage-2-keyboard-cursor-navigation)
   - [First MVP Step](#first-mvp-step)
   - [Strategic Development Approach](#strategic-development-approach)
     - [How Will This Integrate to KATKE as it Matures?](#how-will-this-integrate-to-katke-as-it-matures)
@@ -23,7 +24,7 @@
 
 ### Stage 1: Font Rendering and Hard-Coded Character Box
 
-**Sub-stages:**
+**Sub-Stages:**
 1. **Font Rendering:**
    - Choose a specific nicely licensed font, and integrate it into the project
      - The font should go along with the project, to ensure concistency and reliability
@@ -34,6 +35,16 @@
 2. **Hard-Coded Character Box**:
  - Display a specified-before-launch hard-coded grid of characters of before-launch specified size
  - Consider array backed system for displaying characters
+
+### Stage 2: Keyboard Cursor Navigation
+
+**Sub-Stages:**
+1. **Display a Hard-Coded Text Cursor:**
+   - Display a generic flashing text cursor at a point specified before application launch
+
+2. **Baic Text Cursor Movement via Keyboard Input:**
+   - Move text cursor with keyboard arrow keys
+     - Moving within the character box constrains
 
 ## First MVP Step
 
