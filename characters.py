@@ -9,8 +9,6 @@
 #     [True, True, True, True, True],
 #     [False, True, False, True, False],
 # ]
-
-
 def render_character_bitmap(
     screen_surface,
     character_bitmap,
@@ -44,6 +42,21 @@ def render_character_bitmap(
                 )
 
 
+# GRID BITMAP EXAMPLES
+# INSTRUCTIONS: Pass actual character bitmap arrays in 0D, 1D, or 2D format
+#
+# 0 DIMENSIONAL
+# grid_bitmap = character_bitmap_number_sign
+#
+# 1 DIMENSIONAL
+# grid_bitmap = [character_bitmap_number_sign, character_bitmap_space, character_bitmap_number_sign]
+#
+# 2 DIMENSIONAL
+# grid_bitmap = [
+#     [character_bitmap_number_sign, character_bitmap_space, character_bitmap_number_sign],
+#     [character_bitmap_space, character_bitmap_number_sign, character_bitmap_space],
+#     [character_bitmap_number_sign, character_bitmap_space, character_bitmap_number_sign]
+# ]
 def render_character_grid_bitmap(
     screen_surface,
     grid_bitmap,
