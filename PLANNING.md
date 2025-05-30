@@ -55,11 +55,21 @@
 ### Stage 2: Keyboard Cursor Navigation
 
 **Sub-Stages:**
-1. **Display a Hard-Coded Text Cursor:**
-   - Display a generic flashing text cursor at a point specified before application launch
-   - Potentially use a 2D bitmap to represent cursor postion
+1. **Boolean Bitmap Inversion Function:**
+   - Implement general purpose `invert_boolean_bitmap()` function for any-dimensional bitmaps
+   - Supports 0D (single boolean), 1D, 2D, and higher dimensional bitmap inversion
+   - Foundation for cursor color inversion functionality
+   - [x] ***COMPLETED:*** 2025-5-31
 
-2. **Baic Text Cursor Movement via Keyboard Input:**
+2. **Display a Hard-Coded Text Cursor:**
+   - Display a generic flashing text cursor at a point specified before application launch
+   - This will be a flashing box style cursor.
+   - Probably gonna add an explicit space character bitmap to the `storage.json`, used for when characterspace in a grid is empty
+   - Probably implement a function on top of `render_character_grid_bitmap`, to support this cursor stuff
+   - Potentially use a dictionary to represent cursor postion, to maintain verbose approach to variables
+   - Account for preferably supporting any number of cursors
+
+3. **Baic Text Cursor Movement via Keyboard Input:**
    - Move text cursor with keyboard arrow keys
      - Moving within the character box constrains
 
