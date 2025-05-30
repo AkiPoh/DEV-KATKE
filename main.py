@@ -2,7 +2,7 @@ import pygame
 
 import render_character_bitmap
 
-character_number_sign = [
+character_bitmap_number_sign = [
     [False, True, False, True, False],
     [True, True, True, True, True],
     [False, True, False, True, False],
