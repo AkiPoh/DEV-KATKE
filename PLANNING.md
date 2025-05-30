@@ -42,9 +42,10 @@
    - Move to a JSON for storing hard-coded bitmaps, to avoid excessively cluttering the Python files
    - [x] ***COMPLETED:*** 2025-5-30
 
-3. **Render a Row or Column of Characters:**
-   - Render a row or colum of characters as decided by a one-dimensional bitmap array
-   - You can choose the spacing of the characters in pixels
+3. **Render a Row of Characters:**
+   - Render a row of characters as decided by a one-dimensional bitmap array
+   - Spacing of characters choosable in pixels
+   - [x] ***COMPLETED:*** 2025-5-30
 
 4. **Render a Grid of Characters**
    - Render a grid of characters as decide by a two-dimensional bitmap array
