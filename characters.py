@@ -44,65 +44,100 @@ def render_character_bitmap(
                 )
 
 
-# ROW BITMAP EXAMPLE
-# INSTRUCTIONS: True means render character, False means empty space
-# row_bitmap = [True, False, True, True]
+# # ROW BITMAP EXAMPLE
+# # INSTRUCTIONS: True means render character, False means empty space
+# # row_bitmap = [True, False, True, True]
 
 
-def render_character_row_bitmap(
-    screen_surface,
-    character_bitmap,
-    row_bitmap,
-    spacing_between_characters,
-    begin_position_horizontal,
-    begin_position_vertical,
-):
-    character_bitmap_width = len(character_bitmap[0])
+# def render_character_row_bitmap(
+#     screen_surface,
+#     character_bitmap,
+#     row_bitmap,
+#     spacing_between_characters,
+#     begin_position_horizontal,
+#     begin_position_vertical,
+# ):
+#     character_bitmap_width = len(character_bitmap[0])
 
-    current_character_begin_position_horizontal = begin_position_horizontal
+#     current_character_begin_position_horizontal = begin_position_horizontal
 
-    for should_render_character in row_bitmap:
-        if should_render_character:
-            render_character_bitmap(
-                screen_surface,
-                character_bitmap,
-                current_character_begin_position_horizontal,
-                begin_position_vertical,
-            )
-        current_character_begin_position_horizontal += (
-            character_bitmap_width + spacing_between_characters
-        )
+#     for should_render_character in row_bitmap:
+#         if should_render_character:
+#             render_character_bitmap(
+#                 screen_surface,
+#                 character_bitmap,
+#                 current_character_begin_position_horizontal,
+#                 begin_position_vertical,
+#             )
+#         current_character_begin_position_horizontal += (
+#             character_bitmap_width + spacing_between_characters
+#         )
 
 
-# GRID BITMAP EXAMPLE
-# character_bitmaps: dictionary of available characters
-# row_bitmap = ["number_sign", "space", "number_sign", "number_sign"]
+# GRID BITMAP EXAMPLES
+# INSTRUCTIONS: Pass actual character bitmap arrays in 0D, 1D, or 2D format
+#
+# 0 DIMENSIONAL
+# grid_bitmap = character_bitmap_number_sign
+#
+# 1 DIMENSIONAL
+# grid_bitmap = [character_bitmap_number_sign, character_bitmap_space, character_bitmap_number_sign]
+#
+# 2 DIMENSIONAL
+# grid_bitmap = [
+#     [character_bitmap_number_sign, character_bitmap_space, character_bitmap_number_sign],
+#     [character_bitmap_space, character_bitmap_number_sign, character_bitmap_space],
+#     [character_bitmap_number_sign, character_bitmap_space, character_bitmap_number_sign]
+# ]
 
 
 def render_character_grid_bitmap(
     screen_surface,
-    character_bitmap,
     grid_bitmap,
     spacing_between_characters_horizontal,
     spacing_between_characters_vertical,
     begin_position_horizontal,
     begin_position_vertical,
 ):
-    character_bitmap_height = len(character_bitmap)
+    # If  0D bitmap, make into a 2D bitmap
+    if isinstance(grid_bitmap[0][0], bool):
+        grid_bitmap = [[grid_bitmap]]
+    # If  1D bitmap, make into a 2D bitmap
+    elif isinstance(grid_bitmap[0][0][0], bool):
+        grid_bitmap = [grid_bitmap]
+    # Check if 2D bitmap
+    elif isinstance(grid_bitmap[0][0][0][0], bool):
+        pass
+    else:
+        raise TypeError("render_character_grid_bitmap: Invalid grid_bitmap format")
 
     current_row_begin_position_vertical = begin_position_vertical
 
     for row_bitmap in grid_bitmap:
-        render_character_row_bitmap(
-            screen_surface,
-            character_bitmap,
-            row_bitmap,
-            spacing_between_characters_horizontal,
-            begin_position_horizontal,
-            current_row_begin_position_vertical,
+        if not row_bitmap:  # if empty
+            raise ValueError(
+                "render_character_grid_bitmap: Empty row found in grid_bitmap"
+            )
+
+        current_character_begin_position_horizontal = begin_position_horizontal
+
+        for character_bitmap in row_bitmap:
+            character_bitmap_width = len(character_bitmap[0])
+            render_character_bitmap(
+                screen_surface,
+                character_bitmap,
+                current_character_begin_position_horizontal,
+                current_row_begin_position_vertical,
+            )
+            current_character_begin_position_horizontal += (
+                character_bitmap_width + spacing_between_characters_horizontal
+            )
+
+        max_row_bitmap_height = max(
+            len(character_bitmap) for character_bitmap in row_bitmap
         )
         current_row_begin_position_vertical += (
-            character_bitmap_height + spacing_between_characters_vertical
+            max_row_bitmap_height + spacing_between_characters_vertical
         )
 
 
@@ -112,9 +147,11 @@ def invert_boolean_bitmap(boolean_bitmap):
     if isinstance(boolean_bitmap, bool):  # handles if 0D bitmap
         return not boolean_bitmap  # inverts boolean
     elif not isinstance(boolean_bitmap, list):
-        raise TypeError("'invert_boolean_bitmap' did not like your input")
+        raise TypeError("invert_boolean_bitmap: Invalid boolean_bitmap format")
     else:
         inverted_boolean_bitmap = []
         for current_boolean_bitmap in boolean_bitmap:
-            inverted_boolean_bitmap.append(invert_boolean_bitmap(current_boolean_bitmap))
+            inverted_boolean_bitmap.append(
+                invert_boolean_bitmap(current_boolean_bitmap)
+            )
         return inverted_boolean_bitmap
