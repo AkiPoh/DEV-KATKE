@@ -46,7 +46,7 @@ def render_character_bitmap(
 
 # ROW BITMAP EXAMPLE
 # INSTRUCTIONS: True means render character, False means empty space
-# row_bitmap = [True, False, True, True, False, True, False, False, True]
+# row_bitmap = [True, False, True, True]
 
 
 def render_character_row_bitmap(
@@ -72,6 +72,15 @@ def render_character_row_bitmap(
         current_character_begin_position_horizontal += (
             character_bitmap_width + spacing_between_characters
         )
+
+
+# GRID BITMAP EXAMPLE
+# INSTRUCTIONS: True means render character, False means empty space
+# grid_bitmap = [
+#     [True, False, True],
+#     [False, True, False],
+#     [True, False, True]
+# ]
 
 
 def render_character_grid_bitmap(
