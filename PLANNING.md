@@ -28,16 +28,21 @@
 ### Stage 1: Font Rendering and Hard-Coded Character Box
 
 **Sub-Stages:**
-1. **Font Rendering:**
-   - Choose a specific nicely licensed font, and integrate it into the project
-     - The font should go along with the project, to ensure concistency and reliability
-     - Note the need for extended character character set support
-     - Consider whether the Atkinson Hyperlegible Mono fits our needs
-   - Black text on a white background
+1. **Custom Bitmap Font Rendering:**
+   - Implement custom bitmap font using boolean arrays for pixel-perfect control
+   - Single hard-coded character (e.g., `character_number_sign`) in 5x5 grid
+   - Convert boolean array to pygame Surface, black pixels on white background
+   - Fixed-width monospace for deterministic grid alignment across all platforms
 
 2. **Hard-Coded Character Box**:
- - Display a specified-before-launch hard-coded grid of characters of before-launch specified size
- - Consider array backed system for displaying characters
+   - Display grid of characters using array-backed custom bitmap rendering system
+   - Test pixel-perfect alignment and scaling behavior
+
+**Rationale:** Custom bitmap approach ensures deterministic behavior, supports KATKE's pixel-perfect control principles, and provides foundation for future assembly-based features without platform-dependent font rendering variations.
+
+**Context:** Initially normal font support was considered, but we chose this in favour of that. Due to the need for custom and flexible behaviour, which we don't believe such normal paradigms could've supported in a light-weight manner.
+
+**Future Implications:** We should consider whether to at an unspecified time in the future create a custom font creator integrated to KATKE, for our propietary format,
 
 ### Stage 2: Keyboard Cursor Navigation
 
