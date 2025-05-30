@@ -50,6 +50,7 @@
 4. **Render a Grid of Characters**
    - Render a grid of characters as decide by a two-dimensional bitmap array
    - You choose the spacing of the characters both for the vertical and hozintal axis
+   - [x] ***COMPLETED:*** 2025-5-30
 
 ### Stage 2: Keyboard Cursor Navigation
 
