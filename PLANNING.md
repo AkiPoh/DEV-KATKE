@@ -57,7 +57,7 @@
 **Sub-Stages:**
 1. **Display a Hard-Coded Text Cursor:**
    - Display a generic flashing text cursor at a point specified before application launch
-   - Potentially use a bitmap array to represent cursor postion
+   - Potentially use a 2D bitmap to represent cursor postion
 
 2. **Baic Text Cursor Movement via Keyboard Input:**
    - Move text cursor with keyboard arrow keys
