@@ -2,7 +2,7 @@ import pygame
 
 import json
 
-from render_character_bitmap import render_character_bitmap
+import characters
 
 with open("storage.json") as storage_json_file:
     storage_json_data = json.load(storage_json_file)
@@ -23,7 +23,7 @@ while running:
 
     screen.fill((255, 255, 255))  # COLOR: "white"
 
-    render_character_bitmap(screen, character_bitmap_number_sign, 100, 100)
+    characters.render_character_bitmap(screen, character_bitmap_number_sign, 100, 100)
 
     pygame.display.flip()  # Update the display
     clock.tick(60)  # 60 FPS
