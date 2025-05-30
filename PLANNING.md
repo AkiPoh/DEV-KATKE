@@ -38,11 +38,14 @@
    - **Future Implications:** We should consider whether to at an unspecified time in the future create a custom font creator integrated to KATKE, for our propietary format,
    - [x] ***COMPLETED:*** 2025-5-30
 
-2. **Render a Row or Column of Characters:**
+2. **Import a JSON file for bitmaps**
+   - Move to a JSON for storing hard-coded bitmaps, to avoid excessively cluttering the Python files
+
+3. **Render a Row or Column of Characters:**
    - Render a row or colum of characters as decided by a one-dimensional bitmap array
    - You can choose the spacing of the characters in pixels
 
-3. **Render a Grid of Characters**
+4. **Render a Grid of Characters**
    - Render a grid of characters as decide by a two-dimensional bitmap array
    - You choose the spacing of the characters both for the vertical and hozintal axis
 
@@ -51,6 +54,7 @@
 **Sub-Stages:**
 1. **Display a Hard-Coded Text Cursor:**
    - Display a generic flashing text cursor at a point specified before application launch
+   - Potentially use a bitmap array to represent cursor postion
 
 2. **Baic Text Cursor Movement via Keyboard Input:**
    - Move text cursor with keyboard arrow keys
