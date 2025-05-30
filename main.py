@@ -1,25 +1,13 @@
 import pygame
 
+import json
+
 from render_character_bitmap import render_character_bitmap
 
-character_bitmap_number_sign = [
-    [False, False, False, True, False, False, False, False, True, False, False, False],
-    [False, False, False, True, False, False, False, False, True, False, False, False],
-    [False, False, False, True, False, False, False, False, True, False, False, False],
-    [True, True, True, True, True, True, True, True, True, True, True, True],
-    [True, True, True, True, True, True, True, True, True, True, True, True],
-    [False, False, False, True, False, False, False, False, True, False, False, False],
-    [False, False, False, True, False, False, False, False, True, False, False, False],
-    [False, False, False, True, False, False, False, False, True, False, False, False],
-    [False, False, False, True, False, False, False, False, True, False, False, False],
-    [True, True, True, True, True, True, True, True, True, True, True, True],
-    [True, True, True, True, True, True, True, True, True, True, True, True],
-    [False, False, False, True, False, False, False, False, True, False, False, False],
-    [False, False, False, True, False, False, False, False, True, False, False, False],
-    [False, False, False, True, False, False, False, False, True, False, False, False],
-    [False, False, False, True, False, False, False, False, True, False, False, False],
-    [False, False, False, True, False, False, False, False, True, False, False, False],
-]
+with open("storage.json") as storage_json_file:
+    storage_json_data = json.load(storage_json_file)
+
+character_bitmap_number_sign = storage_json_data["character_bitmap_number_sign"]
 
 pygame.init()
 
