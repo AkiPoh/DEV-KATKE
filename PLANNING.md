@@ -2,7 +2,7 @@
 
 **Notes:**
 - One-pass rendering is an absolute priority, for enabling rather deterministic and explicit behaviour
-- Variable names and code flow should structures should be clear within reason 
+- Variable names and code flows should should be clear within reason 
 
 ## Table of Contents
 - [Planning 2025 MVP of KATKE](#planning-2025-mvp-of-katke)
