@@ -43,9 +43,11 @@ def render_character_bitmap(
                     filled_pixel_color,
                 )
 
+
 # ROW BITMAP EXAMPLE
 # INSTRUCTIONS: True means render character, False means empty space
 # row_bitmap = [True, False, True, True, False, True, False, False, True]
+
 
 def render_character_row_bitmap(
     screen_surface,
@@ -58,6 +60,7 @@ def render_character_row_bitmap(
     character_bitmap_width = len(character_bitmap[0])
 
     current_character_begin_position_horizontal = begin_position_horizontal
+
     for should_render_character in row_bitmap:
         if should_render_character:
             render_character_bitmap(
@@ -68,4 +71,31 @@ def render_character_row_bitmap(
             )
         current_character_begin_position_horizontal += (
             character_bitmap_width + spacing_between_characters
+        )
+
+
+def render_character_grid_bitmap(
+    screen_surface,
+    character_bitmap,
+    grid_bitmap,
+    spacing_between_characters_horizontal,
+    spacing_between_characters_vertical,
+    begin_position_horizontal,
+    begin_position_vertical,
+):
+    character_bitmap_height = len(character_bitmap)
+
+    current_row_begin_position_vertical = begin_position_vertical
+
+    for row_bitmap in grid_bitmap:
+        render_character_row_bitmap(
+            screen_surface,
+            character_bitmap,
+            row_bitmap,
+            spacing_between_characters_horizontal,
+            begin_position_horizontal,
+            current_row_begin_position_vertical,
+        )
+        current_row_begin_position_vertical += (
+            character_bitmap_height + spacing_between_characters_vertical
         )
