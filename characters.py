@@ -108,3 +108,17 @@ def render_character_grid_bitmap(
         current_row_begin_position_vertical += (
             character_bitmap_height + spacing_between_characters_vertical
         )
+
+
+# "boolean_bitmap" can also be zero dimensional (just a simple "True" or "False")
+# Recursive function
+def invert_boolean_bitmap(boolean_bitmap):
+    if isinstance(boolean_bitmap, bool):  # handles if 0D bitmap
+        return not boolean_bitmap  # inverts boolean
+    elif not isinstance(boolean_bitmap, list):
+        raise TypeError("'invert_boolean_bitmap' did not like your input")
+    else:
+        inverted_boolean_bitmap = []
+        for current_boolean_bitmap in boolean_bitmap:
+            inverted_boolean_bitmap.append(invert_boolean_bitmap(current_boolean_bitmap))
+        return inverted_boolean_bitmap

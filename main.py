@@ -8,6 +8,9 @@ with open("storage.json") as storage_json_file:
     storage_json_data = json.load(storage_json_file)
 
 character_bitmap_number_sign = storage_json_data["character_bitmap_number_sign"]
+character_bitmap_number_sign_inverted_booleans = characters.invert_boolean_bitmap(
+    character_bitmap_number_sign
+)
 
 # 5 total rendered characters
 row_bitmap_test = [True, False, True, True, False, True, False, False, True]
@@ -33,7 +36,7 @@ while running:
     screen_surface.fill((255, 255, 255))  # COLOR: "white"
 
     characters.render_character_bitmap(
-        screen_surface, character_bitmap_number_sign, 50, 50
+        screen_surface, character_bitmap_number_sign_inverted_booleans, 50, 50
     )
 
     characters.render_character_row_bitmap(
