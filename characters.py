@@ -1,5 +1,5 @@
 # CHARACTER BITMAP EXAMPLE
-# INSTRUCTION: "False" means that the position is "transparent",
+# INSTRUCTIONS: "False" means that the position is "transparent",
 # "True" means  that the position is "filled"
 #
 # character_bitmap_number_sign = [
@@ -12,7 +12,7 @@
 
 
 def render_character_bitmap(
-    display_surface,
+    screen_surface,
     character_bitmap,
     begin_position_horizontal,
     begin_position_vertical,
@@ -29,16 +29,43 @@ def render_character_bitmap(
             ][character_bitmap_horizontal_position]  # Either "True" or "False"
 
             if bitmap_position_should_be_filled:
-                filled_display_surface_position_horizontal = (
+                filled_screen_surface_position_horizontal = (
                     begin_position_horizontal + character_bitmap_horizontal_position
                 )
-                filled_display_surface_position_vertical = (
+                filled_screen_surface_position_vertical = (
                     begin_position_vertical + character_bitmap_vertical_position
                 )
-                display_surface.set_at(
+                screen_surface.set_at(
                     (
-                        filled_display_surface_position_horizontal,
-                        filled_display_surface_position_vertical,
+                        filled_screen_surface_position_horizontal,
+                        filled_screen_surface_position_vertical,
                     ),
                     filled_pixel_color,
                 )
+
+# ROW BITMAP EXAMPLE
+# INSTRUCTIONS: True means render character, False means empty space
+# row_bitmap = [True, False, True, True, False, True, False, False, True]
+
+def render_character_row_bitmap(
+    screen_surface,
+    character_bitmap,
+    row_bitmap,
+    spacing_between_characters,
+    begin_position_horizontal,
+    begin_position_vertical,
+):
+    character_bitmap_width = len(character_bitmap[0])
+
+    current_character_begin_position_horizontal = begin_position_horizontal
+    for should_render_character in row_bitmap:
+        if should_render_character:
+            render_character_bitmap(
+                screen_surface,
+                character_bitmap,
+                current_character_begin_position_horizontal,
+                begin_position_vertical,
+            )
+        current_character_begin_position_horizontal += (
+            character_bitmap_width + spacing_between_characters
+        )
