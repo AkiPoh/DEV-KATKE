@@ -20,7 +20,7 @@ def render_character_bitmap(
     character_bitmap_height = len(character_bitmap)
     character_bitmap_width = len(character_bitmap[0])
 
-    filled_pixel_color = (0, 0, 0)  # COLOR: black
+    filled_pixel_color = (0, 0, 0)  # COLOR: "black"
 
     for character_bitmap_vertical_position in range(character_bitmap_height):
         for character_bitmap_horizontal_position in range(character_bitmap_width):

@@ -33,7 +33,7 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
-    screen.fill((255, 255, 255))  # COLOR: White
+    screen.fill((255, 255, 255))  # COLOR: "white"
 
     render_character_bitmap(screen, character_bitmap_number_sign, 100, 100)
 
