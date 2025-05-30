@@ -37,9 +37,13 @@
    - **Context:** Initially normal font support was considered, but we chose this in favour of that. Due to the need for custom and flexible behaviour, which we don't believe such normal paradigms could've supported in a light-weight manner.
    - **Future Implications:** We should consider whether to at an unspecified time in the future create a custom font creator integrated to KATKE, for our propietary format,
 
-2. **Hard-Coded Character Box**:
-   - Display grid of characters using array-backed custom bitmap rendering system
-   - Test pixel-perfect alignment and scaling behavior
+2. **Render a Row or Column of Characters:**
+   - Render a row or colum of characters as decided by a one-dimensional bitmap array
+   - You can choose the spacing of the characters in pixels
+
+3. **Render a Grid of Characters**
+   - Render a grid of characters as decide by a two-dimensional bitmap array
+   - You choose the spacing of the characters both for the vertical and hozintal axis
 
 ### Stage 2: Keyboard Cursor Navigation
 
