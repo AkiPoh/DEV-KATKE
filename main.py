@@ -1,31 +1,27 @@
 import pygame
-
 import json
-
 import characters
 
 with open("storage.json") as storage_json_file:
     storage_json_data = json.load(storage_json_file)
+character_bitmaps = storage_json_data["character_bitmaps"]
 
-character_bitmap_number_sign = storage_json_data["character_bitmap_number_sign"]
+character_bitmap_number_sign = character_bitmaps["number_sign"]
 character_bitmap_number_sign_inverted_booleans = characters.invert_boolean_bitmap(
     character_bitmap_number_sign
 )
 
 # 5 total rendered characters
 row_bitmap_test = [True, False, True, True, False, True, False, False, True]
-
-# 5 total redered characters
+# 4 total redered characters
 grid_bitmap_test = [[True, True, False], [False, True, False], [False, False, True]]
 
 spacing_between_characters_horizontal = 4  # in pixels
 spacing_between_characters_vertical = 6  # in pixels
 
 pygame.init()
-
 screen_surface = pygame.display.set_mode((500, 300))
 clock = pygame.time.Clock()
-
 running = True
 
 while running:
