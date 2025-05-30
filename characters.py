@@ -75,12 +75,8 @@ def render_character_row_bitmap(
 
 
 # GRID BITMAP EXAMPLE
-# INSTRUCTIONS: True means render character, False means empty space
-# grid_bitmap = [
-#     [True, False, True],
-#     [False, True, False],
-#     [True, False, True]
-# ]
+# character_bitmaps: dictionary of available characters
+# row_bitmap = ["number_sign", "space", "number_sign", "number_sign"]
 
 
 def render_character_grid_bitmap(

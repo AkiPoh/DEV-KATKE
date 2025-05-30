@@ -72,6 +72,7 @@
    - Probably implement a function on top of `render_character_grid_bitmap`, to support this cursor stuff
    - Potentially use a dictionary to represent cursor postion, to maintain verbose approach to variables
    - Account for preferably supporting any number of cursors
+   - **DEPRECATE FUNCTION: `render_character_row_bitmap()`**
 
 3. **Baic Text Cursor Movement via Keyboard Input:**
    - Move text cursor with keyboard arrow keys
