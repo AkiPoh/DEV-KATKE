@@ -40,6 +40,7 @@
 
 2. **Import a JSON file for bitmaps**
    - Move to a JSON for storing hard-coded bitmaps, to avoid excessively cluttering the Python files
+   - [x] ***COMPLETED:*** 2025-5-30
 
 3. **Render a Row or Column of Characters:**
    - Render a row or colum of characters as decided by a one-dimensional bitmap array
