@@ -3,11 +3,22 @@ import pygame
 from render_character_bitmap import render_character_bitmap
 
 character_bitmap_number_sign = [
-    [False, True, False, True, False],
-    [True, True, True, True, True],
-    [False, True, False, True, False],
-    [True, True, True, True, True],
-    [False, True, False, True, False],
+    [False, False, False, True, False, False, False, False, True, False, False, False],
+    [False, False, False, True, False, False, False, False, True, False, False, False],
+    [False, False, False, True, False, False, False, False, True, False, False, False],
+    [True, True, True, True, True, True, True, True, True, True, True, True],
+    [True, True, True, True, True, True, True, True, True, True, True, True],
+    [False, False, False, True, False, False, False, False, True, False, False, False],
+    [False, False, False, True, False, False, False, False, True, False, False, False],
+    [False, False, False, True, False, False, False, False, True, False, False, False],
+    [False, False, False, True, False, False, False, False, True, False, False, False],
+    [True, True, True, True, True, True, True, True, True, True, True, True],
+    [True, True, True, True, True, True, True, True, True, True, True, True],
+    [False, False, False, True, False, False, False, False, True, False, False, False],
+    [False, False, False, True, False, False, False, False, True, False, False, False],
+    [False, False, False, True, False, False, False, False, True, False, False, False],
+    [False, False, False, True, False, False, False, False, True, False, False, False],
+    [False, False, False, True, False, False, False, False, True, False, False, False],
 ]
 
 pygame.init()
