@@ -24,6 +24,10 @@ def EVENT_QUIT():
         if event.type == pygame.QUIT:
             RUNNING = False
 
+def FILL(COLOR):
+    global SURFACE
+    SURFACE.fill(WHITE)
+
 def UPDATE_DISPLAY():
     pygame.display.flip()
 
@@ -43,10 +47,12 @@ WIDTH_PIXELS = 500
 HEIGHT_PIXELS = 300
 SURFACE = GET_SURFACE()
 CLOCK = CREATE_CLOCK()
+WHITE = (255, 255, 255)
 
 RUNNING = True
 while RUNNING:
     EVENT_QUIT()
+    FILL(WHITE)
     UPDATE_DISPLAY()
     TICK_CLOCK()
 QUIT_PYGAME()
