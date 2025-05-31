@@ -5,8 +5,13 @@
 - **Variable names** and code flows should **should be clear** within reason 
 - **No speculative implementation**
 
+## THE MOST IMPORTANT NOTE
+
+***MONOLITHIC CODING IS THE FUTURE 100%*** (jk, but only kinda)
+
 ## Table of Contents
 - [Planning 2025 MVP of KATKE](#planning-2025-mvp-of-katke)
+  - [THE MOST IMPORTANT NOTE](#the-most-important-note)
   - [Table of Contents](#table-of-contents)
   - [Implementation Roadmap](#implementation-roadmap)
     - [Stage 1: Font Rendering and Hard-Coded Character Box and Keyboard Cursor Navigation](#stage-1-font-rendering-and-hard-coded-character-box-and-keyboard-cursor-navigation)
