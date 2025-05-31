@@ -121,3 +121,19 @@ def invert_boolean_bitmap(boolean_bitmap):
                 invert_boolean_bitmap(current_boolean_bitmap)
             )
         return inverted_boolean_bitmap
+
+
+# Implement `manager_character_row(screen_surface, character_dictionary, character_row_bitmap, cursor_position_index, cursor_blink_toggle_time_ms, spacingbetween_characters_horizontal, spacing_between_characters_vertical, begin_position_horizontal, begin_position_vertical)`
+def manager_character_row(
+    screen_surface,
+    character_dictionary,
+    character_row_bitmap,
+    cursor_position_index,
+    cursor_blink_toggle_time_ms,
+    spacing_between_characters_horizontal,
+    spacing_between_characters_vertical,
+    begin_position_horizontal,
+    begin_position_vertical,
+):
+    print("nothing")
+    
