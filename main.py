@@ -7,7 +7,7 @@ def GET_DEFAULTS():
 
 
 import pygame
-def PYGAME_INIT():
+def INIT_PYGAME():
     pygame.init()
 
 def GET_SURFACE():
@@ -31,14 +31,14 @@ def TICK_CLOCK():
     global CLOCK
     CLOCK.tick(60)  # 60 FPS LIMITED
 
-def PYGAME_QUIT():
+def QUIT_PYGAME():
     pygame.quit()
 
 
 DEFAULTS_PATH = "defaults_storage.json"
 DEFAULTS = GET_DEFAULTS()
 
-PYGAME_INIT()
+INIT_PYGAME()
 WIDTH_PIXELS = 500
 HEIGHT_PIXELS = 300
 SURFACE = GET_SURFACE()
@@ -49,4 +49,4 @@ while RUNNING:
     EVENT_QUIT()
     UPDATE_DISPLAY()
     TICK_CLOCK()
-PYGAME_QUIT()
+QUIT_PYGAME()
