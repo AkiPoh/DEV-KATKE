@@ -43,6 +43,9 @@ running = True
 print(screen_surface.get_width())
 print(screen_surface.get_height())
 
+cursors_color_inverted = False
+cursor_color_inverted_status_last_change_time_ms = 0
+
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
