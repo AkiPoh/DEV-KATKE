@@ -1,7 +1,6 @@
 import pygame
 import json
 import characters
-import tools
 
 with open("defaults_storage.json") as defaults_storage_json_file:
     defaults_storage_json_data = json.load(defaults_storage_json_file)
@@ -86,6 +85,7 @@ while running:
         200,
     )
 
-    pygame.display.flip()  # Update the display
+    pygame.display.flip()  # update the display
+    clock.tick(60)  # limits FPS to 60
 
 pygame.quit()

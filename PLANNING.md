@@ -61,9 +61,10 @@
    - [x] ***COMPLETED:*** 2025-5-31
 
 6. **Implement Advanced Character Row Manager With Cursor Position Support:**
-   - Implement `manager_character_row(screen_surface, character_dictionary, character_row_bitmap, cursor_position_index spacingbetween_characters_horizontal, spacing_between_characters_vertical, begin_position_horizontal, begin_position_vertical)`
+   - Implement `manager_character_row(screen_surface, character_dictionary, character_row_bitmap, cursor_position_index, cursor_blink_toggle_time_ms, spacingbetween_characters_horizontal, spacing_between_characters_vertical, begin_position_horizontal, begin_position_vertical)`
      - The cursor is a blinking box style, levereging `invert_boolean_bitmap()`
      - Leverages `render_character_grid_bitmap()` for actual downstream rendering
+     - Handles cursor blinking timing, etc
    - **Future Considerations** like happened with the `render_character_row_bitmap()` this will likely be deprecated in the near future, in favour of a more unified system
 
 7. **Basic Text Cursor Movement via Keyboard Input:**
