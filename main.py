@@ -1,47 +1,30 @@
-import pygame
 import json
-import characters
+def GET_DEFAULTS():
+    global DEFAULTS_PATH
+    with open(DEFAULTS_PATH) as DEFAULTS_FILE:
+        DEFAULTS = json.load(DEFAULTS_FILE)
+    return DEFAULTS
+DEFAULTS_PATH = "defaults_storage.json"
+DEFAULTS = GET_DEFAULTS()
 
-with open("defaults_storage.json") as defaults_storage_json_file:
-    defaults_storage_json_data = json.load(defaults_storage_json_file)
-character_bitmaps = defaults_storage_json_data["character_bitmaps"]
+import pygame
+def PYGAME_INIT():
+    pygame.init()
+PYGAME_INIT()
 
-character_bitmap_number_sign = character_bitmaps["number_sign"]
-character_bitmap_space = character_bitmaps["space"]
-character_bitmap_number_sign_inverted = characters.invert_boolean_bitmap(
-    character_bitmap_number_sign
-)
+def GET_SURFACE():
+    global WIDTH_PIXELS
+    global HEIGHT_PIXELS
+    return pygame.display.set_mode((WIDTH_PIXELS, HEIGHT_PIXELS))
+WIDTH_PIXELS = 500
+HEIGHT_PIXELS = 300
+SURFACE = GET_SURFACE()
 
-grid_bitmap_0d = character_bitmap_number_sign
-grid_bitmap_1d = [
-    character_bitmap_number_sign,
-    character_bitmap_space,
-    character_bitmap_number_sign,
-]
-grid_bitmap_2d = [
-    [
-        character_bitmap_number_sign,
-        character_bitmap_space,
-        character_bitmap_number_sign,
-    ],
-    [character_bitmap_space, character_bitmap_number_sign, character_bitmap_space],
-    [
-        character_bitmap_number_sign,
-        character_bitmap_space,
-        character_bitmap_number_sign,
-    ],
-]
+def CREATE_CLOCK():
+    return pygame.time.Clock()
+CLOCK = CREATE_CLOCK()
 
-spacing_between_characters_horizontal = 4  # in pixels
-spacing_between_characters_vertical = 6  # in pixels
 
-pygame.init()
-screen_surface = pygame.display.set_mode((500, 300))
-clock = pygame.time.Clock()
-running = True
-
-print(screen_surface.get_width())
-print(screen_surface.get_height())
 
 cursors_color_inverted_status = False
 cursor_color_inverted_since_last_change_time_ms = 0

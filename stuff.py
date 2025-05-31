@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 # CHARACTER BITMAP EXAMPLE
 # INSTRUCTIONS: "False" means that the position is "transparent",
 # "True" means  that the position is "filled"
