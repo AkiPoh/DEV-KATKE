@@ -80,6 +80,12 @@
      - This imples that `defaults_storage.json` is to be used for universal default values
      - Add `temp.json` to `.gitignore`, reserved for temporary json files for development uses
    - **Batch 2:**
+     - Add a function to output screen pixels to a 2D bitmap to a desired new JSON file (default `temp.json`), this'll enable a pixel perfect debugging apporach.
+       - Consider implementing via `pygame.surfarray.array3d()` which outputs a numpy array which we can convert to our prefferred form of arrays immediately--lists
+       - Add a `tools.py` module under which this function will go
+   - **Batch 3:**
+     - Set "zero point" defaults where sensible for functions; this will also help clarify the usual start points of such
+     - 
 
 
 
