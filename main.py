@@ -2,9 +2,9 @@ import pygame
 import json
 import characters
 
-with open("storage.json") as storage_json_file:
-    storage_json_data = json.load(storage_json_file)
-character_bitmaps = storage_json_data["character_bitmaps"]
+with open("defaults_storage.json") as defaults_storage_json_file:
+    defaults_storage_json_data = json.load(defaults_storage_json_file)
+character_bitmaps = defaults_storage_json_data["character_bitmaps"]
 
 character_bitmap_number_sign = character_bitmaps["number_sign"]
 character_bitmap_space = character_bitmaps["space"]

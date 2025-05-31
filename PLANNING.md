@@ -74,7 +74,16 @@
    - **DEPRECATED FUNCTION: `render_character_row_bitmap()`**
    - [x] ***COMPLETED:*** 2025-5-31
 
-3. **Display a Hard-Coded Text Cursor:**
+3.**Clarify Naming Practices and Other Chores:**
+   - **Batch 1:**
+     - Rename `storage.json` to `defaults_.json` for clarity
+     - This imples that `defaults_storage.json` is to be used for universal default values
+     - Add `temp.json` to `.gitignore`, reserved for temporary json files for development uses
+   - **Batch 2:**
+
+
+
+1. **Display a Hard-Coded Text Cursor:**
    - Display a generic flashing text box cursor at a point specified before application launch
    - This will be a flashing box style cursor.
    - Probably gonna add an explicit space character bitmap to the `storage.json`, used for when characterspace in a grid is empty
@@ -82,7 +91,7 @@
    - Potentially use a dictionary to represent cursor postion, to maintain verbose approach to variables
    - Account for preferably supporting any number of cursors
 
-4. **Baic Text Cursor Movement via Keyboard Input:**
+2. **Baic Text Cursor Movement via Keyboard Input:**
    - Move text cursor with keyboard arrow keys
      - Moving within the character box constrains
 
