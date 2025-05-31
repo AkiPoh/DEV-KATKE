@@ -31,7 +31,7 @@ def FILL(COLOR):
 def UPDATE_DISPLAY():
     pygame.display.flip()
 
-def TICK_CLOCK():
+def LIMIT_FPS():
     global CLOCK
     CLOCK.tick(60)  # 60 FPS LIMITED
 
@@ -54,5 +54,5 @@ while RUNNING:
     EVENT_QUIT()
     FILL(WHITE)
     UPDATE_DISPLAY()
-    TICK_CLOCK()
+    LIMIT_FPS()
 QUIT_PYGAME()
