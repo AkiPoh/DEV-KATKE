@@ -40,6 +40,9 @@ screen_surface = pygame.display.set_mode((500, 300))
 clock = pygame.time.Clock()
 running = True
 
+print(screen_surface.get_width())
+print(screen_surface.get_height())
+
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
