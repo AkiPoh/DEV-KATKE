@@ -123,6 +123,22 @@ def invert_boolean_bitmap(boolean_bitmap):
         return inverted_boolean_bitmap
 
 
+def manager_cursor_color_inverted_status(
+    cursors_color_inverted_status: bool,
+    cursor_blink_change_duration_ms: int,
+    current_time_ms: int,
+    when_last_change_time_ms: int
+):
+    time_since_last_change = (
+        current_time_ms - when_last_change_time_ms
+    )
+
+    if time_since_last_change >= cursor_blink_change_duration_ms:
+        return not cursors_color_inverted_status, current_time_ms
+
+    return cursors_color_inverted_status, when_last_change_time_ms
+
+
 # Implement `manager_character_row(screen_surface, character_dictionary, character_row_bitmap, cursor_position_index, cursor_blink_toggle_time_ms, spacingbetween_characters_horizontal, spacing_between_characters_vertical, begin_position_horizontal, begin_position_vertical)`
 def manager_character_row(
     screen_surface,
@@ -136,4 +152,3 @@ def manager_character_row(
     begin_position_vertical,
 ):
     print("nothing")
-    

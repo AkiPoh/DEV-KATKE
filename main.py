@@ -43,7 +43,7 @@ running = True
 print(screen_surface.get_width())
 print(screen_surface.get_height())
 
-cursors_color_inverted = False
+cursors_color_inverted_status = False
 cursor_color_inverted_since_last_change_time_ms = 0
 
 while running:
