@@ -52,20 +52,23 @@ def screen_surface_to_rgb_bitmap(screen_surface):
 #         [[255, 255, 255], [0, 0, 0], [128, 128, 128]]
 #     ]
 # }
-def screen_surface_to_json_bitmap_file(screen_surface, output_json_file_path="temp.json"):
+def screen_surface_to_json_bitmap_file(
+    screen_surface, output_json_file_path="temp.json"
+):
     screen_surface_rgb_bitmap = screen_surface_to_rgb_bitmap(screen_surface)
-    
+
     screen_surface_rgb_bitmap_width = len(screen_surface_rgb_bitmap[0])
     screen_surface_rgb_bitmap_height = len(screen_surface_rgb_bitmap)
-    
+
     output_json_data = {
-        "metadata": {
-            "width": screen_surface_rgb_bitmap_width,
-            "height": screen_surface_rgb_bitmap_height,
-            "type": "screen_surface_rgb_bitmap"
-        },
-        "screen_surface_rgb_bitmap": screen_surface_rgb_bitmap
+        "screen_surface_rgb_bitmap": {
+            "metadata": {
+                "bitmap_width": screen_surface_rgb_bitmap_width,
+                "bitmap_height": screen_surface_rgb_bitmap_height,
+            },
+            "bitmap": screen_surface_rgb_bitmap,
+        }
     }
-    
+
     with open(output_json_file_path, "w") as output_json_file:
-        json.dump(output_json_data, output_json_file, indent=4, separators=(', ', ': '))
+        json.dump(output_json_data, output_json_file, indent=4, separators=(", ", ": "))
