@@ -3,6 +3,7 @@
 **Notes:**
 - One-pass rendering is an absolute priority, for enabling rather deterministic and explicit behaviour
 - Variable names and code flows should should be clear within reason 
+- No speculative implementation
 
 ## Table of Contents
 - [Planning 2025 MVP of KATKE](#planning-2025-mvp-of-katke)
@@ -86,7 +87,7 @@
        - Add a `tools.py` module under which this function will go
    - **Batch 3:**
      - Set "zero point" defaults where sensible for functions; this will also help clarify the usual start points of such
-     - 
+     - Improve `render_character_bitmap()` function clarity, rather oddly named variables at points
 
 
 
