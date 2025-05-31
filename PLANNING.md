@@ -1,16 +1,15 @@
 # Planning 2025 MVP of KATKE
 
 **Notes:**
-- One-pass rendering is an absolute priority, for enabling rather deterministic and explicit behaviour
-- Variable names and code flows should should be clear within reason 
-- No speculative implementation
+- **One-pass rendering** is an absolute priority, for enabling rather deterministic and explicit behaviour
+- **Variable names** and code flows should **should be clear** within reason 
+- **No speculative implementation**
 
 ## Table of Contents
 - [Planning 2025 MVP of KATKE](#planning-2025-mvp-of-katke)
   - [Table of Contents](#table-of-contents)
   - [Implementation Roadmap](#implementation-roadmap)
-    - [Stage 1: Font Rendering and Hard-Coded Character Box](#stage-1-font-rendering-and-hard-coded-character-box)
-    - [Stage 2: Keyboard Cursor Navigation](#stage-2-keyboard-cursor-navigation)
+    - [Stage 1: Font Rendering and Hard-Coded Character Box and Keyboard Cursor Navigation](#stage-1-font-rendering-and-hard-coded-character-box-and-keyboard-cursor-navigation)
     - [Stage 3: Hard-Coded Character Placement](#stage-3-hard-coded-character-placement)
     - [Stage 4: Continuous Drawing Mode](#stage-4-continuous-drawing-mode)
     - [Stage 5: Character Overwriting System](#stage-5-character-overwriting-system)
@@ -30,83 +29,46 @@
 
 ## Implementation Roadmap
 
-### Stage 1: Font Rendering and Hard-Coded Character Box
+### Stage 1: Font Rendering and Hard-Coded Character Box and Keyboard Cursor Navigation
 
 **Sub-Stages:**
+
 1. **Custom Bitmap Font Rendering:**
-   - Implement custom bitmap font using boolean arrays for pixel-perfect control
-   - Single hard-coded character (e.g., `character_number_sign`) in 5x5 grid
-   - Convert boolean array to pygame Surface, black pixels on white background
-   - Fixed-width monospace for deterministic grid alignment across all platforms
-   - **Rationale:** Custom bitmap approach ensures deterministic behavior, supports KATKE's pixel-perfect control principles, and provides foundation for future assembly-based features without platform-dependent font rendering variations.
-   - **Context:** Initially normal font support was considered, but we chose this in favour of that. Due to the need for custom and flexible behaviour, which we don't believe such normal paradigms could've supported in a light-weight manner.
+   - Implement custom bitmap character rendering using boolean arrays for pixel-perfect control
    - **Future Implications:** We should consider whether to at an unspecified time in the future create a custom font creator integrated to KATKE, for our propietary format,
    - [x] ***COMPLETED:*** 2025-5-30
 
-2. **Import a JSON file for bitmaps**
-   - Move to a JSON for storing hard-coded bitmaps, to avoid excessively cluttering the Python files
-   - [x] ***COMPLETED:*** 2025-5-30
-
-3. **Render a Row of Characters:**
-   - Render a row of characters as decided by a one-dimensional bitmap array
+2. **Render a Row of Characters:**
+   - Render a row of characters as decided by a one-dimensional binary bitmap array
    - Spacing of characters choosable in pixels
    - [x] ***COMPLETED:*** 2025-5-30
 
-4. **Render a Grid of Characters**
-   - Render a grid of characters as decide by a two-dimensional bitmap array
+3. **Render a Grid of Characters**
+   - Render a grid of characters as decide by a two-dimensional binary bitmap array
    - You choose the spacing of the characters both for the vertical and hozintal axis
    - [x] ***COMPLETED:*** 2025-5-30
 
-### Stage 2: Keyboard Cursor Navigation
-
-**Sub-Stages:**
-1. **Boolean Bitmap Inversion Function:**
+4. **Boolean Bitmap Inversion Function:**
    - Implement general purpose `invert_boolean_bitmap()` function for any-dimensional bitmaps
    - Supports 0D (single boolean), 1D, 2D, and higher dimensional bitmap inversion
    - Foundation for cursor color inversion functionality for displaying the blinking cursor box
    - [x] ***COMPLETED:*** 2025-5-31
 
-2. **Unified Multi-Dimensional Character Rendering System**
-   - **Architectural Consolidation:** Unified `render_character_grid_bitmap()` to handle 0D (single character), 1D (row), and 2D (grid) rendering through a single interface
-   - **Foundation Refinement:** Enhanced dimensional detection with somewhat robust error handling and input validation
-   - **Code Quality:** Eliminated redundant `render_character_row_bitmap()` function, creating cleaner architecture with consistent error messaging
-   - **Strategic Rationale:** This consolidation creates a more maintainable foundation that directly supports the upcoming cursor system. The unified system reduces architectural cognitive load and provides consistent behavior across all character rendering scenarios.
-   - **Future Implications:** The dimensional detection and normalization patterns established here will inform how we handle assembly structures, layer management, and complex UI element rendering throughout KATKE's development.
+5. **Unified Multi-Dimensional Character Grid Bitmap Rendering System:**
+   - Unified `render_character_grid_bitmap()` to handle 0D (single character), 1D (row), and 2D (grid) rendering through a single interface
+   - Takes character bitmaps instead of binary True or False as elements within grid bitmpas. This will enable for us to flexibly, and precisely handle character rendering, as we move towards implementing more abstracted and functional character grids.
    - **DEPRECATED FUNCTION: `render_character_row_bitmap()`**
    - [x] ***COMPLETED:*** 2025-5-31
 
-3.**Clarify Naming Practices and Other Chores:**
-   - **Batch 1:**
-     - Rename `storage.json` to `defaults_.json` for clarity
-     - This imples that `defaults_storage.json` is to be used for universal default values
-     - Add `temp.json` to `.gitignore`, reserved for temporary json files for development uses
-     - [x] ***COMPLETED:*** 2025-5-31
-   - **Batch 2:**
-       - Consider implementing via `pygame.surfarray.array3d()` which outputs a numpy array which we can convert to our prefferred form of arrays immediately--lists
-       - Add a `tools.py` module under which this function will go
-       - Add `temp.txt` to the `.gitignore`
-       - [x] ***COMPLETED:*** 2025-5-31
-   - **Batch 3:**
-     - Add a function to output screen pixels to a 2D bitmap to a desired new JSON file (default `temp.json`), this'll enable a pixel perfect debugging apporach.
-       - Pretty output
-       - Include also width and height of bitmap in numbers.
-   - **Batch 4:**
-     - Set "zero point" defaults where sensible for functions; this will also help clarify the usual start points of such
-     - Improve `render_character_bitmap()` function clarity, rather oddly named variables at points
+6. **Implement Advanced Character Row Manager With Cursor Position Support:**
+   - Implement `manager_character_row(screen_surface, character_dictionary, character_row_bitmap, cursor_position_index spacingbetween_characters_horizontal, spacing_between_characters_vertical, begin_position_horizontal, begin_position_vertical)`
+     - The cursor is a blinking box style, levereging `invert_boolean_bitmap()`
+     - Leverages `render_character_grid_bitmap()` for actual downstream rendering
+   - **Future Considerations** like happened with the `render_character_row_bitmap()` this will likely be deprecated in the near future, in favour of a more unified system
 
-
-
-1. **Display a Hard-Coded Text Cursor:**
-   - Display a generic flashing text box cursor at a point specified before application launch
-   - This will be a flashing box style cursor.
-   - Probably gonna add an explicit space character bitmap to the `storage.json`, used for when characterspace in a grid is empty
-   - Probably implement a function on top of `render_character_grid_bitmap`, to support this cursor stuff
-   - Potentially use a dictionary to represent cursor postion, to maintain verbose approach to variables
-   - Account for preferably supporting any number of cursors
-
-2. **Baic Text Cursor Movement via Keyboard Input:**
+7. **Basic Text Cursor Movement via Keyboard Input:**
    - Move text cursor with keyboard arrow keys
-     - Moving within the character box constrains
+     - Moving within the character row constrains
 
 ### Stage 3: Hard-Coded Character Placement
 

@@ -44,8 +44,6 @@ running = True
 print(screen_surface.get_width())
 print(screen_surface.get_height())
 
-screen_surface_captured = False
-
 while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -89,16 +87,5 @@ while running:
     )
 
     pygame.display.flip()  # Update the display
-    
-    # if not screen_captured:
-    #     captured_bitmap = tools.screen_surface_to_rgb_bitmap(screen_surface)
-        
-    #     with open("temp.txt", "w") as bitmap_file:
-    #         bitmap_file.write(str(captured_bitmap))
-        
-    #     print("Screen bitmap captured and saved")
-    #     screen_captured = True
-    
-    clock.tick(60)  # 60 FPS
 
 pygame.quit()
