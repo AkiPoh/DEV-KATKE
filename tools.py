@@ -1,5 +1,3 @@
-import pygame
-
 # EXAMPLE OUTPUT: 3x2 pixel screen with different colors
 # rgb_bitmap = [
 #     # Row 0: red, green, blue pixels
@@ -10,7 +8,7 @@ import pygame
 #     [[255, 255, 255], [0, 0, 0], [128, 128, 128]]
 # ]
 #
-# ACCESS PATTER:
+# ACCESS PATTERN:
 # rgb_bitmap[0][0] = [255, 0, 0]     # Top-left pixel: red
 # rgb_bitmap[0][1] = [0, 255, 0]     # Top-middle pixel: green
 # rgb_bitmap[1][2] = [128, 128, 128] # Bottom-right pixel: gray
@@ -25,7 +23,7 @@ def screen_surface_to_rgb_bitmap(screen_surface):
         current_bitmap_rgb_row = []
         for bitmap_column_index in range(
             screen_surface_bitmap_width
-        ):  # starts at 0; stops a  n-1
+        ):  # starts at 0; stops at  n-1
             current_pixel_rgb_color = screen_surface.get_at(
                 (bitmap_column_index, bitmap_row_index)
             )

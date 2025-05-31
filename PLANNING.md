@@ -82,10 +82,15 @@
      - Add `temp.json` to `.gitignore`, reserved for temporary json files for development uses
      - [x] ***COMPLETED:*** 2025-5-31
    - **Batch 2:**
-     - Add a function to output screen pixels to a 2D bitmap to a desired new JSON file (default `temp.json`), this'll enable a pixel perfect debugging apporach.
        - Consider implementing via `pygame.surfarray.array3d()` which outputs a numpy array which we can convert to our prefferred form of arrays immediately--lists
        - Add a `tools.py` module under which this function will go
+       - Add `temp.txt` to the `.gitignore`
+       - [x] ***COMPLETED:*** 2025-5-31
    - **Batch 3:**
+     - Add a function to output screen pixels to a 2D bitmap to a desired new JSON file (default `temp.json`), this'll enable a pixel perfect debugging apporach.
+       - Pretty output
+       - Include also width and height of bitmap in numbers.
+   - **Batch 4:**
      - Set "zero point" defaults where sensible for functions; this will also help clarify the usual start points of such
      - Improve `render_character_bitmap()` function clarity, rather oddly named variables at points
 

@@ -1,6 +1,7 @@
 import pygame
 import json
 import characters
+import tools
 
 with open("defaults_storage.json") as defaults_storage_json_file:
     defaults_storage_json_data = json.load(defaults_storage_json_file)
@@ -42,6 +43,8 @@ running = True
 
 print(screen_surface.get_width())
 print(screen_surface.get_height())
+
+screen_surface_captured = False
 
 while running:
     for event in pygame.event.get():
@@ -86,6 +89,16 @@ while running:
     )
 
     pygame.display.flip()  # Update the display
+    
+    # if not screen_captured:
+    #     captured_bitmap = tools.screen_surface_to_rgb_bitmap(screen_surface)
+        
+    #     with open("temp.txt", "w") as bitmap_file:
+    #         bitmap_file.write(str(captured_bitmap))
+        
+    #     print("Screen bitmap captured and saved")
+    #     screen_captured = True
+    
     clock.tick(60)  # 60 FPS
 
 pygame.quit()
