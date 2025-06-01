@@ -26,7 +26,7 @@ def EVENT_QUIT():
 
 def FILL(COLOR):
     global SURFACE
-    SURFACE.fill(WHITE)
+    SURFACE.fill(COLOR)
 
 def UPDATE_DISPLAY():
     pygame.display.flip()
