@@ -56,15 +56,15 @@ KATKE is a permissive open-source project licensed under the Apache 2.0 license.
 
 Our very first (major) Alpha release. Demonstrating at least some level of polished functionality; and demonstrating our vision for what's to come.
 
-Currently we plan for this version to be a light-weight but relatively powerful ASCII Art Creator that is especially optimized for quickly creting inline diagrams for code documentation.
+Currently we plan for this version to be a light-weight but relatively powerful ASCII Art Creator that is especially optimized for quickly creating inline diagrams for code documentation.
 
 ### Second Major Alpha Release of KATKE, (Targeting: No Later Than the End of 2025 Q4), (v1.0.0)
 
 Our second major Alpha release. Demonstrating that we can scale.
 
-Currenntly we plan for this version to build upon our previous versions by integrating a new light-weight code editor for Python and Markdown with *some* more powerful and novel features, especially focused on powering a more intuitive programming experience.
+Currently we plan for this version to build upon our previous versions by integrating a new light-weight code editor for Python and Markdown with *some* more powerful and novel features, especially focused on powering a more intuitive programming experience.
 
-We intend to also integreate a light-weight approach to running Python programs and displaying Markdown files in a rendered format.
+We intend to also integrate a light-weight approach to running Python programs and displaying Markdown files in a rendered format.
 
 ## Our Current Vision for KATKE
 
@@ -93,7 +93,7 @@ We believe in continuous innovation. This means we prioritize breakthrough featu
 
 ### Looking Ahead: LTS Editions of KATKE
 
-Looking ahead, when we the time is right to begin to implementing such routine. Every two years we plan to initiate a new LTS edition branch off of the `main` branch that will receive indefinite support. This approach allows us to maintain momentum and agility on the "main" branch. While ensuring we can offer tooling that serves the need for longer supported versions with relevant security updates for longer projects.
+Looking ahead, when the time is right to begin implementing such routine. Every two years we plan to initiate a new LTS edition branch off of the `main` branch that will receive indefinite support. This approach allows us to maintain momentum and agility on the "main" branch. While ensuring we can offer tooling that serves the need for longer supported versions with relevant security updates for longer projects.
 
 Cross compatibility between LTS editions will not be a priority. But for updates within a specific LTS branch backwards and forwards compatibility is an absolute priority.
 
