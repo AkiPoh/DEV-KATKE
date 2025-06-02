@@ -89,11 +89,11 @@ KATKE is being built for:
 
 We believe in continuous innovation. This means we prioritize breakthrough features over maintaining legacy code. By extension, we believe that backwards compatibility on the "main" branch version is not a major priority--due to the need to have the flexibility required to innovate with low-friction, and not be limited by past decisions, that might not fit our and our users modern needs the best.
 
-**We believe true and transparent reproducibility comes from using the same tool version, the same way, to achieve the same outcome.** We intend to with native solutions to enable such rapid version hopping between tool versions, to ensure smooth usage experience for project developers, across multiple projects.
+**We believe true and transparent reproducibility comes from using the same tool version, the same way, to achieve the same outcome.** We intend to provide native solutions to enable such rapid version hopping between tool versions, to ensure smooth usage experience for project developers, across multiple projects.
 
 ### Looking Ahead: LTS Editions of KATKE
 
-Looking ahead, when the time is right to begin implementing such routine. Every two years we plan to initiate a new LTS edition branch off of the `main` branch that will receive indefinite support. This approach allows us to maintain momentum and agility on the "main" branch. While ensuring we can offer tooling that serves the need for longer supported versions with relevant security updates for longer projects.
+Looking ahead, when the time is right to begin implementing such routine. Every two years we plan to initiate a new LTS edition branch off of the `main` branch that will receive indefinite support. This approach allows us to maintain momentum and agility on the "main" branch. This also ensures we can offer tooling that serves the need for longer supported versions with relevant security updates for longer projects.
 
 Cross compatibility between LTS editions will not be a priority. But for updates within a specific LTS branch backwards and forwards compatibility is an absolute priority.
 
