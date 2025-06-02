@@ -3,6 +3,19 @@
 **Table of Contents**
 
 - [Roadmap for v0 of KATKE](#roadmap-for-v0-of-katke)
-  - [1. Unified Character Grid Rendering System](#1-unified-character-grid-rendering-system)
-
-## 1. Unified Character Grid Rendering System
+1. **Indicators**
+   1. When `e` key pressed toggle on or off respective an indicator square of pixels
+   2. When `spacebar` key pressed hold an indicator square of pixels on until disengaged
+   3. When `arrow` key pressed hold an indicator square of pixels on until disengaged
+2. **Unified Character Grid Rendering System**
+   1. Render a character
+   2. Render a row of characters
+   3. Render a grid of characters
+   4. Subset of 5 ASCII characters functional
+3. **Cursor**
+   1. Enabling cursor functionality
+   2. Moving cursor with `arrow` keys
+   3. Handling `arrow` key pressed down continious smooth movement
+4. **Brush**
+   1. Draw character on `spacebar` press
+   2. Draw characters continiously when toggled via `e` key press
