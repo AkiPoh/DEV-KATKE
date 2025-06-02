@@ -18,11 +18,11 @@ def GET_SURFACE():
 def CREATE_CLOCK():
     return pygame.time.Clock()
 
-def EVENT_QUIT():
-    global RUNNING
-    for event in pygame.event.get():
-        if event.type == pygame.QUIT:
-            RUNNING = False
+def CHECK_EVENT(EVENT_TYPE):
+    for EVENT in pygame.event.get():
+        if EVENT.type == EVENT_TYPE:
+            return True
+    return False
 
 def FILL(COLOR):
     global SURFACE
@@ -48,10 +48,12 @@ HEIGHT_PIXELS = 300
 SURFACE = GET_SURFACE()
 CLOCK = CREATE_CLOCK()
 WHITE = (255, 255, 255)
+QUIT_EVENT = pygame.QUIT
 
 RUNNING = True
 while RUNNING:
-    EVENT_QUIT()
+    if CHECK_EVENT(QUIT_EVENT):
+        RUNNING = False
     FILL(WHITE)
     UPDATE_DISPLAY()
     LIMIT_FPS()
