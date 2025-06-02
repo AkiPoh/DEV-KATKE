@@ -1,4 +1,4 @@
-# Planning 2025 v0 of KATKE
+# Old Roadmap for v0 of KATKE
 
 **First Major Alpha Release of KATKE, (Targeting: End of 2025 Q3), (v0.0.0)**
 
@@ -8,30 +8,13 @@ Currently we plan for this version to be a light-weight but relatively powerful 
 
 **Table of Contents**
 
-- [Planning 2025 v0 of KATKE](#planning-2025-v0-of-katke)
-  - [Notes:](#notes)
-  - [New Implementation Roadmap](#new-implementation-roadmap)
-    - [1. Unified Character Grid Rendering System](#1-unified-character-grid-rendering-system)
-  - [Old Implementation Roadmap](#old-implementation-roadmap)
-    - [Stage 1: Font Rendering and Hard-Coded Character Box and Keyboard Cursor Navigation](#stage-1-font-rendering-and-hard-coded-character-box-and-keyboard-cursor-navigation)
-    - [Stage 3: Hard-Coded Character Placement](#stage-3-hard-coded-character-placement)
-    - [Stage 4: Continuous Drawing Mode](#stage-4-continuous-drawing-mode)
-    - [Stage 5: Character Overwriting System](#stage-5-character-overwriting-system)
+- [Old Roadmap for v0 of KATKE](#old-roadmap-for-v0-of-katke)
+  - [Stage 1: Font Rendering and Hard-Coded Character Box and Keyboard Cursor Navigation](#stage-1-font-rendering-and-hard-coded-character-box-and-keyboard-cursor-navigation)
+  - [Stage 3: Hard-Coded Character Placement](#stage-3-hard-coded-character-placement)
+  - [Stage 4: Continuous Drawing Mode](#stage-4-continuous-drawing-mode)
+  - [Stage 5: Character Overwriting System](#stage-5-character-overwriting-system)
 
-## Notes:
-
-- **One-pass rendering** is an absolute priority, for enabling rather deterministic and explicit behaviour
-- **Variable names** and code flows should **should be clear** within reason 
-- **No speculative implementation**
-- ***MONOLITHIC CODING IS THE FUTURE 100%*** (jk, but only kinda)
-
-## New Implementation Roadmap
-
-### 1. Unified Character Grid Rendering System
-
-## Old Implementation Roadmap
-
-### Stage 1: Font Rendering and Hard-Coded Character Box and Keyboard Cursor Navigation
+## Stage 1: Font Rendering and Hard-Coded Character Box and Keyboard Cursor Navigation
 
 **Sub-Stages:**
 
@@ -73,7 +56,7 @@ Currently we plan for this version to be a light-weight but relatively powerful 
    - Move text cursor with keyboard arrow keys
      - Moving within the character row constrains
 
-### Stage 3: Hard-Coded Character Placement
+## Stage 3: Hard-Coded Character Placement
 
 **Sub-Stages:**
 1. **Display a Hard-Coded Character at a Specified Position:**
@@ -81,7 +64,7 @@ Currently we plan for this version to be a light-weight but relatively powerful 
 2. **Place a Character Text Cursor Postion**
    - Place a hard-coded character at the text cursor position when the user pressed the "spacebar"
 
-### Stage 4: Continuous Drawing Mode
+## Stage 4: Continuous Drawing Mode
 
 **Sub-Stages:**
 1. **Toggle an Indicator by Pressing "E"**
@@ -90,7 +73,7 @@ Currently we plan for this version to be a light-weight but relatively powerful 
 2. **Actual Continuous Drawing Mode Implementation**
 - Based on toggle status automatically place characters where the text cursor is, even when it moves
 
-### Stage 5: Character Overwriting System
+## Stage 5: Character Overwriting System
 
 **Sub-Stages:**
 1. **More Characters - Freedom!**

@@ -1,4 +1,4 @@
-# Planning 2025 v0 of KATKE
+# General Planning for v0 of KATKE
 
 **First Major Alpha Release of KATKE, (Targeting: End of 2025 Q3), (v0.0.0)**
 
@@ -8,7 +8,7 @@ Currently we plan for this version to be a light-weight but relatively powerful 
 
 **Table of Contents**
 
-- [Planning 2025 v0 of KATKE](#planning-2025-v0-of-katke)
+- [General Planning for v0 of KATKE](#general-planning-for-v0-of-katke)
   - [Notes:](#notes)
   - [First MVP Step](#first-mvp-step)
   - [Strategic Development Approach](#strategic-development-approach)
