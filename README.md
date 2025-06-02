@@ -13,8 +13,8 @@ We intend to employ, enhance, and augment existing solutions wherever possible, 
   - [License of KATKE](#license-of-katke)
   - [Tech Architecture of KATKE](#tech-architecture-of-katke)
   - [Planned Roadmap for KATKE](#planned-roadmap-for-katke)
-    - [First Major Alpha Release of KATKE, (Targeting: No Later Than the End of 2025 Q3), (v0.0.0)](#first-major-alpha-release-of-katke-targeting-no-later-than-the-end-of-2025-q3-v000)
-    - [Second Major Alpha Release of KATKE, (Targeting: No Later Than the End of 2025 Q4), (v1.0.0)](#second-major-alpha-release-of-katke-targeting-no-later-than-the-end-of-2025-q4-v100)
+    - [First Major Alpha Release of KATKE, (Targeting: End of 2025 Q3), (v0.0.0)](#first-major-alpha-release-of-katke-targeting-end-of-2025-q3-v000)
+    - [Second Major Alpha Release of KATKE, (Targeting: End of 2025 Q4), (v1.0.0)](#second-major-alpha-release-of-katke-targeting-end-of-2025-q4-v100)
   - [Our Current Vision for KATKE](#our-current-vision-for-katke)
     - [Core Principles for KATKE](#core-principles-for-katke)
     - [Target Audience for KATKE](#target-audience-for-katke)
@@ -52,13 +52,13 @@ KATKE is a permissive open-source project licensed under the Apache 2.0 license.
 
 ## Planned Roadmap for KATKE
 
-### First Major Alpha Release of KATKE, (Targeting: No Later Than the End of 2025 Q3), (v0.0.0)
+### First Major Alpha Release of KATKE, (Targeting: End of 2025 Q3), (v0.0.0)
 
 Our very first (major) Alpha release. Demonstrating at least some level of polished functionality; and demonstrating our vision for what's to come.
 
 Currently we plan for this version to be a light-weight but relatively powerful ASCII Art Creator that is especially optimized for quickly creating inline diagrams for code documentation.
 
-### Second Major Alpha Release of KATKE, (Targeting: No Later Than the End of 2025 Q4), (v1.0.0)
+### Second Major Alpha Release of KATKE, (Targeting: End of 2025 Q4), (v1.0.0)
 
 Our second major Alpha release. Demonstrating that we can scale.
 
@@ -87,19 +87,19 @@ KATKE is being built for:
 
 ### Philosophy Behind Our Development Practices for KATKE
 
-We believe in continuous innovation. This means we prioritize breakthrough features over maintaining legacy code. By extension, we believe that backwards compatibility on the "main" branch version is not a major priority--due to the need to have the flexibility required to innovate with low-friction, and not be limited by past decisions, that might not fit our and our users modern needs the best.
+We believe in continuous innovation. This means we prioritize breakthrough features over maintaining legacy code. By extension, we believe that backwards compatibility on the `main` branch version is not a major priority--due to the need to have the flexibility required to innovate with low-friction, and not be limited by past decisions, that might not fit our and our users' modern needs the best.
 
 **We believe true and transparent reproducibility comes from using the same tool version, the same way, to achieve the same outcome.** We intend to provide native solutions to enable such rapid version hopping between tool versions, to ensure smooth usage experience for project developers, across multiple projects.
 
 ### Looking Ahead: LTS Editions of KATKE
 
-Looking ahead, when the time is right to begin implementing such routine. Every two years we plan to initiate a new LTS edition branch off of the `main` branch that will receive indefinite support. This approach allows us to maintain momentum and agility on the "main" branch. This also ensures we can offer tooling that serves the need for longer supported versions with relevant security updates for longer projects.
+Looking ahead, when the time is right to begin implementing such routine. Every two years we plan to initiate a new LTS edition branch off of the `main` branch that will receive indefinite support. This approach allows us to maintain momentum and agility on the `main` branch. This also ensures we can offer tooling that serves the need for longer supported versions with relevant security updates for longer projects.
 
 Cross compatibility between LTS editions will not be a priority. But for updates within a specific LTS branch backwards and forwards compatibility is an absolute priority.
 
 ### `main` Branch Development Practices for KATKE
 
-We employ squash merges exclusively for the main branch of this project on our GitHub repository (https://github.com/KATKE-GROUP/KATKE). Every merge represents a complete unit--code, documentation, tests--all fully up-to-date for that specific commit. This ensures every commit on main is a coherent and logical snapshot of the project.
+We employ squash merges exclusively for the `main` branch of this project on our GitHub repository (https://github.com/KATKE-GROUP/KATKE). Every merge represents a complete unit--code, documentation, tests--all fully up-to-date for that specific commit. This ensures every commit on `main` is a coherent and logical snapshot of the project.
 
 ## Communication Channels for KATKE and Contributing to KATKE
 
